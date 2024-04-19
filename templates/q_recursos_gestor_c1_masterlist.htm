@@ -1,0 +1,740 @@
+<div class="panel panel-primary">
+		<div class="panel-heading">
+						{BEGIN top_block}
+<div class="panel-title r-panel-top row" data-location="top" id="form_top_{$pageid}" data-makeup="panel-only" {$form_top} data-pageid="{$pageid}" >		
+	 
+		 
+			<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class="			col-md-12
+	
+">
+		 
+		<span data-itemtype="back_master" data-itemid="back_master" {$item_back_master} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-link  btn-xs 
+	" {$backtomasterlink_attrs} >
+							Regresar a la tabla principal			</a>
+</span>
+	 
+		<h3 class="panel-title" data-itemtype="masterlist_header" data-itemid="masterlist_header" {$item_masterlist_header} data-pageid="{$pageid}" >{$pagetitlelabel q_recursos_gestor_c1 masterlist}</h3>
+		</div>			</div>		
+{END top_block}
+			</div>
+		<div class="panel-body">
+							{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="panel-only" {$form_above-grid} data-pageid="{$pageid}" >		
+	</div>		
+{END above-grid_block}
+								{BEGIN grid_block}
+{BEGIN message_block}
+<div data-grid-message data-pageid="{$pageid}" class="alert {$message_class}" role="alert" {$grid_message_attrs}>{$message}</div>
+{END message_block}<div  data-location="grid" id="form_grid_{$pageid}" data-makeup="panel-only" {$form_grid} data-pageid="{$pageid}" >
+{BEGIN grid_row}
+	<div class="r-grid-columns {$rowclass}" {$rowattrs} {$rowstyle}>
+	{BEGIN grid_record}
+		{BEGIN grid_vrecord}
+		<div class="panel panel-default" {$recordattrs}>
+									
+			{BEGIN grid_recordheader}
+			<div class="panel-heading">
+						
+				<table data-location="grid" class="header-table">
+					<tbody>
+				 
+												
+						<tr >
+						 
+							{BEGIN cellblock_grid_cell_top}
+	<th
+	
+	{$cell_grid_cell_top}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_top" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</th>
+	{END cellblock_grid_cell_top}
+						 
+							{BEGIN cellblock_grid_cell_field24}
+	<th
+	
+	{$cell_grid_cell_field24}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_field24" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</th>
+	{END cellblock_grid_cell_field24}
+						 
+							{BEGIN cellblock_grid_cell_field8}
+	<th
+	
+	{$cell_grid_cell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</th>
+	{END cellblock_grid_cell_field8}
+												</tr>
+									 
+									 
+									 
+									 
+									 
+											
+					</tbody>
+				</table>
+
+					</div>
+		{END grid_recordheader}
+												
+			<div class="panel-body">					
+						
+				<table data-location="grid" class="bs-fieldsgrid table">
+					<tbody>
+				 
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_field14}
+	<td
+	
+	{$cell_grid_cell_field14}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert		 {$VIGENCIA_class}	"
+
+			data-field="VIGENCIA"
+	
+	data-cellId="grid_cell_field14" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN VIGENCIA_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="VIGENCIA" data-fieldname="VIGENCIA" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label q_recursos_gestor_c1 VIGENCIA }</span>
+			</span>
+	</span>
+{END VIGENCIA_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_field14}
+						 
+							{BEGIN cellblock_grid_cell_field15}
+	<td
+	
+	{$cell_grid_cell_field15}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$VIGENCIA_class}	"
+
+			data-field="VIGENCIA"
+	
+	data-cellId="grid_cell_field15" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN VIGENCIA_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field1" {$item_simple_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="VIGENCIA" data-fieldname="VIGENCIA" data-default-width >
+{$VIGENCIA_value}
+</span>
+{END VIGENCIA_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field15}
+						 
+							{BEGIN cellblock_grid_cell_field19}
+	<td
+	
+	{$cell_grid_cell_field19}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$UEJ_class}	"
+
+			data-field="UEJ"
+	
+	data-cellId="grid_cell_field19" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN UEJ_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="UEJ" data-fieldname="UEJ" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label q_recursos_gestor_c1 UEJ }</span>
+			</span>
+	</span>
+{END UEJ_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_field19}
+						 
+							{BEGIN cellblock_grid_cell_field20}
+	<td
+	
+	{$cell_grid_cell_field20}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$UEJ_class}	"
+
+			data-field="UEJ"
+	
+	data-cellId="grid_cell_field20" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN UEJ_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field2" {$item_simple_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="UEJ" data-fieldname="UEJ" data-default-width >
+{$UEJ_value}
+</span>
+{END UEJ_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field20}
+						 
+							{BEGIN cellblock_grid_cell_field16}
+	<td
+	
+	{$cell_grid_cell_field16}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert		 {$PRODUCTO_class}	"
+
+			data-field="PRODUCTO"
+	
+	data-cellId="grid_cell_field16" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN PRODUCTO_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field15" {$item_simple_grid_field15} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="PRODUCTO" data-fieldname="PRODUCTO" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label q_recursos_gestor_c1 PRODUCTO }</span>
+			</span>
+	</span>
+{END PRODUCTO_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_field16}
+						 
+							{BEGIN cellblock_grid_cell_field17}
+	<td
+	
+	{$cell_grid_cell_field17}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$PRODUCTO_class}	"
+
+			data-field="PRODUCTO"
+	
+	data-cellId="grid_cell_field17" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN PRODUCTO_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field13" {$item_simple_grid_field13} data-pageid="{$pageid}" data-page="q_recursos_gestor_c1_masterlist" data-record-id="{$recId}" data-field="PRODUCTO" data-fieldname="PRODUCTO" data-default-width >
+{$PRODUCTO_value}
+</span>
+{END PRODUCTO_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field17}
+						 
+							{BEGIN cellblock_grid_cell_field25}
+	<td
+	
+	{$cell_grid_cell_field25}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$BPIN_class}	"
+
+			data-field="BPIN"
+	
+	data-cellId="grid_cell_field25" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN BPIN_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="BPIN" data-fieldname="BPIN" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label q_recursos_gestor_c1 BPIN }</span>
+			</span>
+	</span>
+{END BPIN_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_field25}
+						 
+							{BEGIN cellblock_grid_cell_field9}
+	<td
+	
+	{$cell_grid_cell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$BPIN_class}	"
+
+			data-field="BPIN"
+	
+	data-cellId="grid_cell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN BPIN_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="BPIN" data-fieldname="BPIN" data-default-width >
+{$BPIN_value}
+</span>
+{END BPIN_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field9}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label}
+	<td
+	
+	{$cell_grid_cell_label}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert		 {$DEP_003_class}	"
+
+			data-field="DEP_003"
+	
+	data-cellId="grid_cell_label" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN DEP_003_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field26" {$item_simple_grid_field26} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="DEP_003" data-fieldname="DEP_003" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label q_recursos_gestor_c1 DEP_003 }</span>
+			</span>
+	</span>
+{END DEP_003_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label}
+						 
+							{BEGIN cellblock_grid_cell_field}
+	<td
+	
+	{$cell_grid_cell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$DEP_003_class}	"
+
+			data-field="DEP_003"
+	
+	data-cellId="grid_cell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN DEP_003_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field23" {$item_simple_grid_field23} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="DEP_003" data-fieldname="DEP_003" data-default-width >
+{$DEP_003_value}
+</span>
+{END DEP_003_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field}
+						 
+							{BEGIN cellblock_grid_cell_field1}
+	<td
+	
+	{$cell_grid_cell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$RESPONSABLE_003_class}	"
+
+			data-field="RESPONSABLE_003"
+	
+	data-cellId="grid_cell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN RESPONSABLE_003_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field27" {$item_simple_grid_field27} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="RESPONSABLE_003" data-fieldname="RESPONSABLE_003" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label q_recursos_gestor_c1 RESPONSABLE_003 }</span>
+			</span>
+	</span>
+{END RESPONSABLE_003_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_field1}
+						 
+							{BEGIN cellblock_grid_cell_field26}
+	<td
+	
+	{$cell_grid_cell_field26}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$RESPONSABLE_003_class}	"
+
+			data-field="RESPONSABLE_003"
+	
+	data-cellId="grid_cell_field26" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN RESPONSABLE_003_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field24" {$item_simple_grid_field24} data-pageid="{$pageid}" data-page="q_recursos_gestor_c1_masterlist" data-record-id="{$recId}" data-field="RESPONSABLE_003" data-fieldname="RESPONSABLE_003" data-default-width >
+{$RESPONSABLE_003_value}
+</span>
+{END RESPONSABLE_003_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field26}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label6}
+	<td
+	
+	{$cell_grid_cell_label6}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert		 {$DESCRIPCION_002_class}	"
+
+			data-field="DESCRIPCION_002"
+	
+	data-cellId="grid_cell_label6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN DESCRIPCION_002_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field16" {$item_simple_grid_field16} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="DESCRIPCION_002" data-fieldname="DESCRIPCION_002" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label q_recursos_gestor_c1 DESCRIPCION_002 }</span>
+			</span>
+	</span>
+{END DESCRIPCION_002_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label6}
+						 
+							{BEGIN cellblock_grid_cell_field6}
+	<td
+	
+	{$cell_grid_cell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$DESCRIPCION_002_class}	"
+
+			data-field="DESCRIPCION_002"
+	
+	data-cellId="grid_cell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN DESCRIPCION_002_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field14" {$item_simple_grid_field14} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="DESCRIPCION_002" data-fieldname="DESCRIPCION_002" data-default-width >
+{$DESCRIPCION_002_value}
+</span>
+{END DESCRIPCION_002_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field6}
+						 
+							{BEGIN cellblock_grid_cell_field7}
+	<td
+	
+	{$cell_grid_cell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$ACTIVIDAD_class}	"
+
+			data-field="ACTIVIDAD"
+	
+	data-cellId="grid_cell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN ACTIVIDAD_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field21" {$item_simple_grid_field21} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ACTIVIDAD" data-fieldname="ACTIVIDAD" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label q_recursos_gestor_c1 ACTIVIDAD }</span>
+			</span>
+	</span>
+{END ACTIVIDAD_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_field7}
+						 
+							{BEGIN cellblock_grid_cell_field29}
+	<td
+	
+	{$cell_grid_cell_field29}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$ACTIVIDAD_class}	"
+
+			data-field="ACTIVIDAD"
+	
+	data-cellId="grid_cell_field29" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN ACTIVIDAD_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field20" {$item_simple_grid_field20} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ACTIVIDAD" data-fieldname="ACTIVIDAD" data-default-width >
+{$ACTIVIDAD_value}
+</span>
+{END ACTIVIDAD_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field29}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label2}
+	<td
+	
+	{$cell_grid_cell_label2}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert		 {$RECURSOS_ASIGNADOS_class}	"
+
+			data-field="RECURSOS_ASIGNADOS"
+	
+	data-cellId="grid_cell_label2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN RECURSOS_ASIGNADOS_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field25" {$item_simple_grid_field25} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="RECURSOS_ASIGNADOS" data-fieldname="RECURSOS_ASIGNADOS" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label q_recursos_gestor_c1 RECURSOS_ASIGNADOS }</span>
+			</span>
+	</span>
+{END RECURSOS_ASIGNADOS_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label2}
+						 
+							{BEGIN cellblock_grid_cell_field2}
+	<td
+	
+	{$cell_grid_cell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$RECURSOS_ASIGNADOS_class}	"
+
+			data-field="RECURSOS_ASIGNADOS"
+	
+	data-cellId="grid_cell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN RECURSOS_ASIGNADOS_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field22" {$item_simple_grid_field22} data-pageid="{$pageid}" data-page="q_recursos_gestor_c1_masterlist" data-record-id="{$recId}" data-field="RECURSOS_ASIGNADOS" data-fieldname="RECURSOS_ASIGNADOS" data-default-width >
+{$RECURSOS_ASIGNADOS_value}
+</span>
+{END RECURSOS_ASIGNADOS_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field2}
+						 
+							{BEGIN cellblock_grid_cell_label3}
+	<td
+	
+	{$cell_grid_cell_label3}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert		 {$PROGRAMADO_class}	"
+
+			data-field="PROGRAMADO"
+	
+	data-cellId="grid_cell_label3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN PROGRAMADO_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="grid_field_label" {$item_grid_field_label} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="PROGRAMADO" data-fieldname="PROGRAMADO" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label q_recursos_gestor_c1 PROGRAMADO }</span>
+			</span>
+	</span>
+{END PROGRAMADO_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label3}
+						 
+							{BEGIN cellblock_grid_cell_field3}
+	<td
+	
+	{$cell_grid_cell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$PROGRAMADO_class}	"
+
+			data-field="PROGRAMADO"
+	
+	data-cellId="grid_cell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN PROGRAMADO_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field" {$item_grid_field} data-pageid="{$pageid}" data-page="q_recursos_gestor_c1_masterlist" data-record-id="{$recId}" data-field="PROGRAMADO" data-fieldname="PROGRAMADO" data-default-width >
+{$PROGRAMADO_value}
+</span>
+{END PROGRAMADO_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field3}
+						 
+							{BEGIN cellblock_grid_cell_field30}
+	<td
+	
+	{$cell_grid_cell_field30}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$SALDO_PROG_class}	"
+
+			data-field="SALDO_PROG"
+	
+	data-cellId="grid_cell_field30" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN SALDO_PROG_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="grid_field_label1" {$item_grid_field_label1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="SALDO_PROG" data-fieldname="SALDO_PROG" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label q_recursos_gestor_c1 SALDO_PROG }</span>
+			</span>
+	</span>
+{END SALDO_PROG_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_field30}
+						 
+							{BEGIN cellblock_grid_cell_field22}
+	<td
+	
+	{$cell_grid_cell_field22}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$SALDO_PROG_class}	"
+
+			data-field="SALDO_PROG"
+	
+	data-cellId="grid_cell_field22" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN SALDO_PROG_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field1" {$item_grid_field1} data-pageid="{$pageid}" data-page="q_recursos_gestor_c1_masterlist" data-record-id="{$recId}" data-field="SALDO_PROG" data-fieldname="SALDO_PROG" data-default-width >
+{$SALDO_PROG_value}
+</span>
+{END SALDO_PROG_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field22}
+												</tr>
+									 
+											
+					</tbody>
+				</table>
+
+				
+			</div>				
+									
+		</div>
+		{END grid_vrecord}
+	{END grid_record}
+	</div>
+
+<div style="clear: both;"></div>
+ 
+	{BEGIN grid_record}
+			{END grid_record}
+ 
+	{BEGIN grid_record}
+			{END grid_record}
+ 
+	{BEGIN grid_record}
+			{END grid_record}
+
+
+{END grid_row}
+</div>			
+{END grid_block}
+								</div>
+</div>

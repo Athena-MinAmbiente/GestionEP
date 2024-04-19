@@ -1,0 +1,546 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-search" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel nopaa_master_stat_0 search}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN PAA_ID_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_PAA_ID}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="PAA_ID{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="PAA_ID" data-fieldname="PAA_ID" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_PAA_ID}">
+		{$label nopaa_master_stat_0 PAA_ID }	</label>
+	<div class="r-search-option">
+		{$searchtype_PAA_ID}
+	</div>
+	<div class="r-search-field">
+		{$PAA_ID_editcontrol}	</div>
+	<div class="r-search-field">
+		{$PAA_ID_editcontrol1}
+	</div>
+	
+</div>
+
+{END PAA_ID_fieldblock}
+											
+{BEGIN ACT_ID_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ACT_ID}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="ACT_ID{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="ACT_ID" data-fieldname="ACT_ID" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_ACT_ID}">
+		{$label nopaa_master_stat_0 ACT_ID }	</label>
+	<div class="r-search-option">
+		{$searchtype_ACT_ID}
+	</div>
+	<div class="r-search-field">
+		{$ACT_ID_editcontrol}	</div>
+	<div class="r-search-field">
+		{$ACT_ID_editcontrol1}
+	</div>
+	
+</div>
+
+{END ACT_ID_fieldblock}
+											
+{BEGIN PROD_ID_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_PROD_ID}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="PROD_ID{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="PROD_ID" data-fieldname="PROD_ID" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_PROD_ID}">
+		{$label nopaa_master_stat_0 PROD_ID }	</label>
+	<div class="r-search-option">
+		{$searchtype_PROD_ID}
+	</div>
+	<div class="r-search-field">
+		{$PROD_ID_editcontrol}	</div>
+	<div class="r-search-field">
+		{$PROD_ID_editcontrol1}
+	</div>
+	
+</div>
+
+{END PROD_ID_fieldblock}
+											
+{BEGIN PAAID_INTEGRADO_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_PAAID_INTEGRADO}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="PAAID_INTEGRADO{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="PAAID_INTEGRADO" data-fieldname="PAAID_INTEGRADO" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_PAAID_INTEGRADO}">
+		{$label nopaa_master_stat_0 PAAID_INTEGRADO }	</label>
+	<div class="r-search-option">
+		{$searchtype_PAAID_INTEGRADO}
+	</div>
+	<div class="r-search-field">
+		{$PAAID_INTEGRADO_editcontrol}	</div>
+	<div class="r-search-field">
+		{$PAAID_INTEGRADO_editcontrol1}
+	</div>
+	
+</div>
+
+{END PAAID_INTEGRADO_fieldblock}
+											
+{BEGIN DESCRIPCION_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_DESCRIPCION}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="DESCRIPCION{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="DESCRIPCION" data-fieldname="DESCRIPCION" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_DESCRIPCION}">
+		{$label nopaa_master_stat_0 DESCRIPCION }	</label>
+	<div class="r-search-option">
+		{$searchtype_DESCRIPCION}
+	</div>
+	<div class="r-search-field">
+		{$DESCRIPCION_editcontrol}	</div>
+	<div class="r-search-field">
+		{$DESCRIPCION_editcontrol1}
+	</div>
+	
+</div>
+
+{END DESCRIPCION_fieldblock}
+											
+{BEGIN MES_INICIO_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_MES_INICIO}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="MES_INICIO{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field8" {$item_integrated_search_field8} data-pageid="{$pageid}" data-field="MES_INICIO" data-fieldname="MES_INICIO" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_MES_INICIO}">
+		{$label nopaa_master_stat_0 MES_INICIO }	</label>
+	<div class="r-search-option">
+		{$searchtype_MES_INICIO}
+	</div>
+	<div class="r-search-field">
+		{$MES_INICIO_editcontrol}	</div>
+	<div class="r-search-field">
+		{$MES_INICIO_editcontrol1}
+	</div>
+	
+</div>
+
+{END MES_INICIO_fieldblock}
+											
+{BEGIN FUENTE_RECURSOS_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_FUENTE_RECURSOS}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="FUENTE_RECURSOS{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field14" {$item_integrated_search_field14} data-pageid="{$pageid}" data-field="FUENTE_RECURSOS" data-fieldname="FUENTE_RECURSOS" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_FUENTE_RECURSOS}">
+		{$label nopaa_master_stat_0 FUENTE_RECURSOS }	</label>
+	<div class="r-search-option">
+		{$searchtype_FUENTE_RECURSOS}
+	</div>
+	<div class="r-search-field">
+		{$FUENTE_RECURSOS_editcontrol}	</div>
+	<div class="r-search-field">
+		{$FUENTE_RECURSOS_editcontrol1}
+	</div>
+	
+</div>
+
+{END FUENTE_RECURSOS_fieldblock}
+											
+{BEGIN VALOR_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_VALOR}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="VALOR{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field15" {$item_integrated_search_field15} data-pageid="{$pageid}" data-field="VALOR" data-fieldname="VALOR" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_VALOR}">
+		{$label nopaa_master_stat_0 VALOR }	</label>
+	<div class="r-search-option">
+		{$searchtype_VALOR}
+	</div>
+	<div class="r-search-field">
+		{$VALOR_editcontrol}	</div>
+	<div class="r-search-field">
+		{$VALOR_editcontrol1}
+	</div>
+	
+</div>
+
+{END VALOR_fieldblock}
+											
+{BEGIN UNIDAD_CONTRATACION_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_UNIDAD_CONTRATACION}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="UNIDAD_CONTRATACION{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field20" {$item_integrated_search_field20} data-pageid="{$pageid}" data-field="UNIDAD_CONTRATACION" data-fieldname="UNIDAD_CONTRATACION" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_UNIDAD_CONTRATACION}">
+		{$label nopaa_master_stat_0 UNIDAD_CONTRATACION }	</label>
+	<div class="r-search-option">
+		{$searchtype_UNIDAD_CONTRATACION}
+	</div>
+	<div class="r-search-field">
+		{$UNIDAD_CONTRATACION_editcontrol}	</div>
+	<div class="r-search-field">
+		{$UNIDAD_CONTRATACION_editcontrol1}
+	</div>
+	
+</div>
+
+{END UNIDAD_CONTRATACION_fieldblock}
+											
+{BEGIN responsable_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_responsable}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="responsable{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field25" {$item_integrated_search_field25} data-pageid="{$pageid}" data-field="responsable" data-fieldname="responsable" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_responsable}">
+		{$label nopaa_master_stat_0 responsable }	</label>
+	<div class="r-search-option">
+		{$searchtype_responsable}
+	</div>
+	<div class="r-search-field">
+		{$responsable_editcontrol}	</div>
+	<div class="r-search-field">
+		{$responsable_editcontrol1}
+	</div>
+	
+</div>
+
+{END responsable_fieldblock}
+											
+{BEGIN vigencia_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_vigencia}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="vigencia{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field26" {$item_integrated_search_field26} data-pageid="{$pageid}" data-field="vigencia" data-fieldname="vigencia" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_vigencia}">
+		{$label nopaa_master_stat_0 vigencia }	</label>
+	<div class="r-search-option">
+		{$searchtype_vigencia}
+	</div>
+	<div class="r-search-field">
+		{$vigencia_editcontrol}	</div>
+	<div class="r-search-field">
+		{$vigencia_editcontrol1}
+	</div>
+	
+</div>
+
+{END vigencia_fieldblock}
+											
+{BEGIN sys_user_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sys_user}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="sys_user{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field27" {$item_integrated_search_field27} data-pageid="{$pageid}" data-field="sys_user" data-fieldname="sys_user" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_sys_user}">
+		{$label nopaa_master_stat_0 sys_user }	</label>
+	<div class="r-search-option">
+		{$searchtype_sys_user}
+	</div>
+	<div class="r-search-field">
+		{$sys_user_editcontrol}	</div>
+	<div class="r-search-field">
+		{$sys_user_editcontrol1}
+	</div>
+	
+</div>
+
+{END sys_user_fieldblock}
+											
+{BEGIN registrado_por_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_registrado_por}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="registrado_por{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field28" {$item_integrated_search_field28} data-pageid="{$pageid}" data-field="registrado_por" data-fieldname="registrado_por" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_registrado_por}">
+		{$label nopaa_master_stat_0 registrado_por }	</label>
+	<div class="r-search-option">
+		{$searchtype_registrado_por}
+	</div>
+	<div class="r-search-field">
+		{$registrado_por_editcontrol}	</div>
+	<div class="r-search-field">
+		{$registrado_por_editcontrol1}
+	</div>
+	
+</div>
+
+{END registrado_por_fieldblock}
+											
+{BEGIN sys_date_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sys_date}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="sys_date{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field29" {$item_integrated_search_field29} data-pageid="{$pageid}" data-field="sys_date" data-fieldname="sys_date" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_sys_date}">
+		{$label nopaa_master_stat_0 sys_date }	</label>
+	<div class="r-search-option">
+		{$searchtype_sys_date}
+	</div>
+	<div class="r-search-field">
+		{$sys_date_editcontrol}	</div>
+	<div class="r-search-field">
+		{$sys_date_editcontrol1}
+	</div>
+	
+</div>
+
+{END sys_date_fieldblock}
+											
+{BEGIN sys_status_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sys_status}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="sys_status{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field30" {$item_integrated_search_field30} data-pageid="{$pageid}" data-field="sys_status" data-fieldname="sys_status" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_sys_status}">
+		{$label nopaa_master_stat_0 sys_status }	</label>
+	<div class="r-search-option">
+		{$searchtype_sys_status}
+	</div>
+	<div class="r-search-field">
+		{$sys_status_editcontrol}	</div>
+	<div class="r-search-field">
+		{$sys_status_editcontrol1}
+	</div>
+	
+</div>
+
+{END sys_status_fieldblock}
+											
+{BEGIN transferir_a_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_transferir_a}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="transferir_a{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field41" {$item_integrated_search_field41} data-pageid="{$pageid}" data-field="transferir_a" data-fieldname="transferir_a" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_transferir_a}">
+		{$label nopaa_master_stat_0 transferir_a }	</label>
+	<div class="r-search-option">
+		{$searchtype_transferir_a}
+	</div>
+	<div class="r-search-field">
+		{$transferir_a_editcontrol}	</div>
+	<div class="r-search-field">
+		{$transferir_a_editcontrol1}
+	</div>
+	
+</div>
+
+{END transferir_a_fieldblock}
+											
+{BEGIN ct_integrado_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ct_integrado}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="ct_integrado{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field42" {$item_integrated_search_field42} data-pageid="{$pageid}" data-field="ct_integrado" data-fieldname="ct_integrado" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_ct_integrado}">
+		{$label nopaa_master_stat_0 ct_integrado }	</label>
+	<div class="r-search-option">
+		{$searchtype_ct_integrado}
+	</div>
+	<div class="r-search-field">
+		{$ct_integrado_editcontrol}	</div>
+	<div class="r-search-field">
+		{$ct_integrado_editcontrol1}
+	</div>
+	
+</div>
+
+{END ct_integrado_fieldblock}
+											
+{BEGIN CDP_INTEGRADO_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CDP_INTEGRADO}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="CDP_INTEGRADO{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field57" {$item_integrated_search_field57} data-pageid="{$pageid}" data-field="CDP_INTEGRADO" data-fieldname="CDP_INTEGRADO" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_CDP_INTEGRADO}">
+		{$label nopaa_master_stat_0 CDP_INTEGRADO }	</label>
+	<div class="r-search-option">
+		{$searchtype_CDP_INTEGRADO}
+	</div>
+	<div class="r-search-field">
+		{$CDP_INTEGRADO_editcontrol}	</div>
+	<div class="r-search-field">
+		{$CDP_INTEGRADO_editcontrol1}
+	</div>
+	
+</div>
+
+{END CDP_INTEGRADO_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} data-page=undefined >
+							Buscar			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							Reiniciar			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="search_cancel" data-itemid="search_cancel" {$item_search_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Cancelar			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

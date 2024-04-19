@@ -1,0 +1,1241 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-view"   
+		>
+	{BEGIN body}
+		<style>
+		{$containerCss}
+		</style>
+		<div class="r-vbar-page">
+			<div data-width="300px" data-fixed class="r-left clearfix {$leftbar_class}" >
+								<div data-location="left" id="form_left_{$pageid}" data-makeup="leftbar" {$form_left} data-pageid="{$pageid}">
+{BEGIN left_block}
+ 
+     
+         
+
+			<div data-cellId="left_c0" data-pageid="{$pageid}" data-logo-cell class="clearfix " data-itemid="logo" {$item_logo}>
+				{BEGIN logo_block}
+	<A data-itemtype="logo" data-itemid="logo" {$item_logo} data-pageid="{$pageid}" class="navbar-brand" href="{$home_link}" data-pageid="{$pageid}" {$logo_hiddenattr}>
+		{$logo}
+	</A>
+{END logo_block}
+				<button data-pageid="1" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target="[data-mobile-controlled]">	
+					<span class="sr-only">Toggle navigation</span>	
+					<span class="icon-bar"></span>					
+				</button>				
+			</div>
+		
+ 
+
+			<div class="clearfix " data-cellId="left_c0" data-pageid="{$pageid}" data-logo-cell data-itemid="expand_button" {$item_expand_button} data-topcell-item-type="expand_button" >
+				<span data-itemtype="expand_button" data-itemid="expand_button" {$item_expand_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Expandir" class="btn btn-link   
+	" href="#" >
+					<span class="glyphicon glyphicon-triangle-right"></span>
+										</a>
+</span>
+			</div>
+		
+     
+     
+         
+
+			<div data-cellId="left_c1" data-pageid="{$pageid}" class="clearfix  r-ori-vert " data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}">
+				{BEGIN menuitems_main}
+<ul data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}"	class="r-menu nav menu-treelike" 
+	data-menulevel="1"
+>
+
+{BEGIN item_children1}
+<li class="
+	{$item_current}">
+<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline data-menu-top >
+	{$item_separator}
+	<span class="r-menu-link r-menu-expanded "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren2}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren2}
+	</span>
+		<span class="r-menu-collapsed">{$item_collicon}{$item_firstcap}</span>
+	</a>
+{BEGIN item_showchildren2}
+<ul class="
+			nav collapse 
+			{$submenu_class}" 
+		id="submenu{$item_id}" data-menulevel="2">
+	{BEGIN item_children2}
+		{BEGIN item_menulink2}
+		<li class="
+						{$item_current}"
+		>
+			<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline >
+	{$item_separator}
+	<span class="r-menu-link  "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren2}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren2}
+	</span>
+	</a>
+			{BEGIN item_showchildren3}
+<ul class="
+			nav collapse 
+			{$submenu_class}" 
+		id="submenu{$item_id}" data-menulevel="3">
+	{BEGIN item_children3}
+		{BEGIN item_menulink3}
+		<li class="
+						{$item_current}"
+		>
+			<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline >
+	{$item_separator}
+	<span class="r-menu-link  "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren3}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren3}
+	</span>
+	</a>
+			{BEGIN item_showchildren4}
+<ul class="
+			nav collapse 
+			{$submenu_class}" 
+		id="submenu{$item_id}" data-menulevel="4">
+	{BEGIN item_children4}
+		{BEGIN item_menulink4}
+		<li class="
+						{$item_current}"
+		>
+			<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline >
+	{$item_separator}
+	<span class="r-menu-link  "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren4}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren4}
+	</span>
+	</a>
+			{BEGIN item_showchildren5}
+<ul class="
+			nav collapse 
+			{$submenu_class}" 
+		id="submenu{$item_id}" data-menulevel="5">
+	{BEGIN item_children5}
+		{BEGIN item_menulink5}
+		<li class="
+						{$item_current}"
+		>
+			<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline >
+	{$item_separator}
+	<span class="r-menu-link  "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren5}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren5}
+	</span>
+	</a>
+					</li>
+		{END item_menulink5}
+	{END item_children5}
+</ul>
+{END item_showchildren5}
+		</li>
+		{END item_menulink4}
+	{END item_children4}
+</ul>
+{END item_showchildren4}
+		</li>
+		{END item_menulink3}
+	{END item_children3}
+</ul>
+{END item_showchildren3}
+		</li>
+		{END item_menulink2}
+	{END item_children2}
+</ul>
+{END item_showchildren2}
+</li>
+{END item_children1}
+</ul>
+{END menuitems_main}
+			</div>
+		
+    {END left_block}
+</div>				</div>
+			<div class="r-content-col" data-resize-left="leftbar">
+				<div data-resize-left="leftbar"  data-fixed class="r-topheader" data-resize-name="topbar">
+									{BEGIN supertop_block}
+<nav class="navbar navbar-default" 
+	data-location="supertop" id="form_supertop_{$pageid}" data-makeup="leftbar" {$form_supertop} data-pageid="{$pageid}" >
+			 
+							 
+				<span class="navbar-form  navbar-header" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="expand_menu_button" {$item_expand_menu_button} data-topcell-item-type="expand_menu_button" >
+				<span data-itemtype="expand_menu_button" data-itemid="expand_menu_button" {$item_expand_menu_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Muestrame el menu" class="btn-link   
+	 glyphicon glyphicon-menu-hamburger" href="#" >		
+				
+								</a>
+</span>
+			</span>
+		 
+				<span class="navbar-form  navbar-collapse" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="collapse_button" {$item_collapse_button} data-topcell-item-type="collapse_button" >
+				<span data-itemtype="collapse_button" data-itemid="collapse_button" {$item_collapse_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Encubrir" class="btn-link   
+	 glyphicon glyphicon-triangle-left" href="#" >		
+				
+								</a>
+</span>
+			</span>
+							 
+							 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="loginform_login" {$item_loginform_login} data-topcell-item-type="loginform_login" >
+				{BEGIN guestloginbutton}
+<span data-itemtype="loginform_login" data-itemid="loginform_login" {$item_loginform_login} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" href="#" {$guestloginlink_attrs} >
+							Conectar			</a>
+</span>
+{END guestloginbutton}
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="username_button" {$item_username_button} data-topcell-item-type="username_button" >
+				{BEGIN loggedas_message}
+<span data-itemtype="username_button" data-itemid="username_button" {$item_username_button} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+			{BEGIN userbutton_icon}							<span class="glyphicon glyphicon-user"></span>
+						{END userbutton_icon}{$userbutton_image}			{$username}			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN userinfo_link}
+	<li data-itemtype="userinfo_link" data-itemid="userinfo_link" {$item_userinfo_link} data-pageid="{$pageid}" data-small >
+				<a  href="userinfo.php"  title="" >
+				
+		Perfil del usuario		
+		</a>
+	</li>
+{END userinfo_link}
+							{BEGIN logoutbutton}
+	<li data-itemtype="logout_link" data-itemid="logout_link" {$item_logout_link} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$logoutlink_attrs}  title="" >
+				
+		Desconectarse		
+		</a>
+	</li>
+{END logoutbutton}
+							{BEGIN adminarea_link}
+	<li data-itemtype="adminarea_link" data-itemid="adminarea_link" {$item_adminarea_link} data-pageid="{$pageid}" data-small >
+				<a  href="admin_rights_list.php"  title="" >
+				
+		Area Admin		
+		</a>
+	</li>
+{END adminarea_link}
+					</ul>
+	</span>
+</span>
+{END loggedas_message}
+			</span>
+								</nav>
+{END supertop_block}
+						{$locking}
+				</div>
+				<div class="r-body" data-resize-top="topbar" data-body-width="standard">
+					{$header}
+					<div class="r-top">
+									{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="leftbar" {$form_top} data-pageid="{$pageid}" >		
+	 
+				<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+		 
+		<h2 data-itemtype="view_header" data-itemid="view_header" {$item_view_header} data-pageid="{$pageid}" >{$pagetitlelabel nopaa_master_f_cdp_int view}</h2>
+		</div>					</div>
+			</div>		
+{END top_block}
+						</div>
+											<div class="r-above">
+					{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="leftbar" {$form_above-grid} data-pageid="{$pageid}" >		
+	 
+				<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+		{BEGIN firstAboveGridCell}
+				{END firstAboveGridCell}	
+	</div>					</div>
+			</div>		
+{END above-grid_block}
+	</div>
+<div class="r-grid">
+	{BEGIN grid_tabs}
+  <ul class="nav nav-tabs bsgrid_tabs">
+	{$grid_tabs_content}
+  </ul>
+{END grid_tabs}
+					{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<div class="panel with-tabs panel-default form-tabs" data-itemtype="tabs" data-itemid="tabs" {$item_tabs} data-pageid="{$pageid}" data-page="nopaa_master_f_cdp_int_view">
+	<div class="panel-heading">
+		<ul class="nav nav-tabs" role="tablist">
+									<li role="presentation" class="active">
+				<a aria-controls="settings" role="tab" data-toggle="tab" href="#tab_section{$pageid}">
+					Gestionar solicitud NO PAA				</a>
+			</li>
+										<li role="presentation" class="">
+				<a aria-controls="settings" role="tab" data-toggle="tab" href="#tab_section1{$pageid}">
+									</a>
+			</li>
+									</ul>
+	</div>
+	<div class="panel-body">
+		<div class="tab-content">
+							<div role="tabpanel" class="tab-pane active" id="tab_section{$pageid}"> 
+			{BEGIN section_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="left"
+	data-location="section" id="form_section_{$pageid}" data-makeup="leftbar" {$form_section} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="2"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_section_0} >
+										
+
+{BEGIN cellblock_section_c11}
+<td
+	{$cell_section_c11}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c11" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN vigencia_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_vigencia}  r-vertical-field" data-fieldname="vigencia" data-signal-error-for="vigencia{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field25" {$item_integrated_edit_field25} data-pageid="{$pageid}" data-field="vigencia" data-fieldname="vigencia" data-compact >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_vigencia}">
+		
+		{BEGIN vigencia_label}{$label nopaa_master_f_cdp_int vigencia }{END vigencia_label}
+	</label>
+	<div class="" >
+		{$vigencia_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END vigencia_fieldblock}
+	
+								</td>
+			{END cellblock_section_c11}
+			 
+		
+							
+
+{BEGIN cellblock_section_c12}
+<td
+	{$cell_section_c12}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c12" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_section_c12}
+								</tr>
+	 
+	 
+														<tr {$row_section_1} >
+										
+
+{BEGIN cellblock_section_c6}
+<td
+	{$cell_section_c6}
+	class=" r-ori-vert"
+	
+			data-single
+			
+	ocolspan="2"		data-cellId="section_c6" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN DESCRIPCION_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_DESCRIPCION}  r-vertical-field" data-fieldname="DESCRIPCION" data-signal-error-for="DESCRIPCION{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="DESCRIPCION" data-fieldname="DESCRIPCION" data-compact >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_DESCRIPCION}">
+		
+		{BEGIN DESCRIPCION_label}{$label nopaa_master_f_cdp_int DESCRIPCION }{END DESCRIPCION_label}
+	</label>
+	<div class="" >
+		{$DESCRIPCION_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END DESCRIPCION_fieldblock}
+	
+								</td>
+			{END cellblock_section_c6}
+								</tr>
+	 
+	 
+														<tr {$row_section_2} >
+										
+
+{BEGIN cellblock_section_c2}
+<td
+	{$cell_section_c2}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c2" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN VALOR_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_VALOR}  r-vertical-field" data-fieldname="VALOR" data-signal-error-for="VALOR{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}" data-field="VALOR" data-fieldname="VALOR" data-compact >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_VALOR}">
+		
+		{BEGIN VALOR_label}{$label nopaa_master_f_cdp_int VALOR }{END VALOR_label}
+	</label>
+	<div class="" >
+		{$VALOR_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END VALOR_fieldblock}
+	
+								</td>
+			{END cellblock_section_c2}
+			 
+																
+
+{BEGIN cellblock_section_c3}
+<td
+	{$cell_section_c3}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c3" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN VALOR_VIGENCIA_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_VALOR_VIGENCIA}  r-vertical-field" data-fieldname="VALOR_VIGENCIA" data-signal-error-for="VALOR_VIGENCIA{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field15" {$item_integrated_edit_field15} data-pageid="{$pageid}" data-field="VALOR_VIGENCIA" data-fieldname="VALOR_VIGENCIA" data-compact >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_VALOR_VIGENCIA}">
+		
+		{BEGIN VALOR_VIGENCIA_label}{$label nopaa_master_f_cdp_int VALOR_VIGENCIA }{END VALOR_VIGENCIA_label}
+	</label>
+	<div class="" >
+		{$VALOR_VIGENCIA_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END VALOR_VIGENCIA_fieldblock}
+	
+								</td>
+			{END cellblock_section_c3}
+								</tr>
+	 
+	 
+														<tr {$row_section_3} >
+										
+
+{BEGIN cellblock_section_c7}
+<td
+	{$cell_section_c7}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c7" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN sys_status_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sys_status}  r-vertical-field" data-fieldname="sys_status" data-signal-error-for="sys_status{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field29" {$item_integrated_edit_field29} data-pageid="{$pageid}" data-field="sys_status" data-fieldname="sys_status" data-compact >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_sys_status}">
+		
+		{BEGIN sys_status_label}{$label nopaa_master_f_cdp_int sys_status }{END sys_status_label}
+	</label>
+	<div class="" >
+		{$sys_status_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END sys_status_fieldblock}
+	
+								</td>
+			{END cellblock_section_c7}
+			 
+																
+
+{BEGIN cellblock_section_c8}
+<td
+	{$cell_section_c8}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c8" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN REQ_MAILNOT_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_REQ_MAILNOT}  r-vertical-field" data-fieldname="REQ_MAILNOT" data-signal-error-for="REQ_MAILNOT{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field32" {$item_integrated_edit_field32} data-pageid="{$pageid}" data-field="REQ_MAILNOT" data-fieldname="REQ_MAILNOT" data-compact >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_REQ_MAILNOT}">
+		
+		{BEGIN REQ_MAILNOT_label}{$label nopaa_master_f_cdp_int REQ_MAILNOT }{END REQ_MAILNOT_label}
+	</label>
+	<div class="" >
+		{$REQ_MAILNOT_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END REQ_MAILNOT_fieldblock}
+	
+								</td>
+			{END cellblock_section_c8}
+								</tr>
+			</tbody></table>
+{END section_block}
+						</div>
+					<div role="tabpanel" class="tab-pane " id="tab_section1{$pageid}"> 
+			{BEGIN section1_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="left"
+	data-location="section1" id="form_section1_{$pageid}" data-makeup="leftbar" {$form_section1} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="3"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr {$row_section1_0} >
+										
+
+{BEGIN cellblock_section1_c1}
+<td
+	{$cell_section1_c1}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c1" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN responsable_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_responsable}  r-vertical-field" data-fieldname="responsable" data-signal-error-for="responsable{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field24" {$item_integrated_edit_field24} data-pageid="{$pageid}" data-field="responsable" data-fieldname="responsable" data-compact >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_responsable}">
+		
+		{BEGIN responsable_label}{$label nopaa_master_f_cdp_int responsable }{END responsable_label}
+	</label>
+	<div class="" >
+		{$responsable_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END responsable_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c1}
+			 
+																
+
+{BEGIN cellblock_section1_c2}
+<td
+	{$cell_section1_c2}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c2" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN TIPO_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_TIPO}  r-vertical-field" data-fieldname="TIPO" data-signal-error-for="TIPO{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="TIPO" data-fieldname="TIPO" data-compact >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_TIPO}">
+		
+		{BEGIN TIPO_label}{$label nopaa_master_f_cdp_int TIPO }{END TIPO_label}
+	</label>
+	<div class="" >
+		{$TIPO_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END TIPO_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c2}
+			 
+																
+
+{BEGIN cellblock_section1_c}
+<td
+	{$cell_section1_c}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN UNIDAD_CONTRATACION_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_UNIDAD_CONTRATACION}  r-vertical-field" data-fieldname="UNIDAD_CONTRATACION" data-signal-error-for="UNIDAD_CONTRATACION{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field19" {$item_integrated_edit_field19} data-pageid="{$pageid}" data-field="UNIDAD_CONTRATACION" data-fieldname="UNIDAD_CONTRATACION" data-compact >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_UNIDAD_CONTRATACION}">
+		
+		{BEGIN UNIDAD_CONTRATACION_label}{$label nopaa_master_f_cdp_int UNIDAD_CONTRATACION }{END UNIDAD_CONTRATACION_label}
+	</label>
+	<div class="" >
+		{$UNIDAD_CONTRATACION_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END UNIDAD_CONTRATACION_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c}
+								</tr>
+	 
+	 
+														<tr {$row_section1_1} >
+										
+
+{BEGIN cellblock_section1_c3}
+<td
+	{$cell_section1_c3}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c3" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN sys_user_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sys_user}  r-vertical-field" data-fieldname="sys_user" data-signal-error-for="sys_user{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field26" {$item_integrated_edit_field26} data-pageid="{$pageid}" data-field="sys_user" data-fieldname="sys_user" data-compact >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_sys_user}">
+		
+		{BEGIN sys_user_label}{$label nopaa_master_f_cdp_int sys_user }{END sys_user_label}
+	</label>
+	<div class="" >
+		{$sys_user_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END sys_user_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c3}
+			 
+																
+
+{BEGIN cellblock_section1_c4}
+<td
+	{$cell_section1_c4}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c4" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN registrado_por_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_registrado_por}  r-vertical-field" data-fieldname="registrado_por" data-signal-error-for="registrado_por{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field27" {$item_integrated_edit_field27} data-pageid="{$pageid}" data-field="registrado_por" data-fieldname="registrado_por" data-compact >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_registrado_por}">
+		
+		{BEGIN registrado_por_label}{$label nopaa_master_f_cdp_int registrado_por }{END registrado_por_label}
+	</label>
+	<div class="" >
+		{$registrado_por_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END registrado_por_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c4}
+			 
+																
+
+{BEGIN cellblock_section1_c5}
+<td
+	{$cell_section1_c5}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c5" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN sys_date_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sys_date}  r-vertical-field" data-fieldname="sys_date" data-signal-error-for="sys_date{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field28" {$item_integrated_edit_field28} data-pageid="{$pageid}" data-field="sys_date" data-fieldname="sys_date" data-compact >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_sys_date}">
+		
+		{BEGIN sys_date_label}{$label nopaa_master_f_cdp_int sys_date }{END sys_date_label}
+	</label>
+	<div class="" >
+		{$sys_date_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END sys_date_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c5}
+								</tr>
+			</tbody></table>
+{END section1_block}
+						</div>
+				</div>
+	</div>
+</div>  											<table 
+	data-body-align="left"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="leftbar" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN PROD_ID_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_PROD_ID}  r-vertical-field" data-fieldname="PROD_ID" data-signal-error-for="PROD_ID{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="PROD_ID" data-fieldname="PROD_ID" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_PROD_ID}">
+		
+		{BEGIN PROD_ID_label}{$label nopaa_master_f_cdp_int PROD_ID }{END PROD_ID_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$PROD_ID_value}	</div>
+
+		
+</div>
+
+
+{END PROD_ID_fieldblock}
+											
+{BEGIN PAAID_INTEGRADO_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_PAAID_INTEGRADO}  r-vertical-field" data-fieldname="PAAID_INTEGRADO" data-signal-error-for="PAAID_INTEGRADO{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="PAAID_INTEGRADO" data-fieldname="PAAID_INTEGRADO" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_PAAID_INTEGRADO}">
+		
+		{BEGIN PAAID_INTEGRADO_label}{$label nopaa_master_f_cdp_int PAAID_INTEGRADO }{END PAAID_INTEGRADO_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$PAAID_INTEGRADO_value}	</div>
+
+		
+</div>
+
+
+{END PAAID_INTEGRADO_fieldblock}
+											
+{BEGIN CDP_INTEGRADO_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CDP_INTEGRADO}  r-vertical-field" data-fieldname="CDP_INTEGRADO" data-signal-error-for="CDP_INTEGRADO{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="CDP_INTEGRADO" data-fieldname="CDP_INTEGRADO" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_CDP_INTEGRADO}">
+		
+		{BEGIN CDP_INTEGRADO_label}{$label nopaa_master_f_cdp_int CDP_INTEGRADO }{END CDP_INTEGRADO_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$CDP_INTEGRADO_value}	</div>
+
+		
+</div>
+
+
+{END CDP_INTEGRADO_fieldblock}
+											
+{BEGIN DESCRIPCION_NEW_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_DESCRIPCION_NEW}  r-vertical-field" data-fieldname="DESCRIPCION_NEW" data-signal-error-for="DESCRIPCION_NEW{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="DESCRIPCION_NEW" data-fieldname="DESCRIPCION_NEW" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_DESCRIPCION_NEW}">
+		
+		{BEGIN DESCRIPCION_NEW_label}{$label nopaa_master_f_cdp_int DESCRIPCION_NEW }{END DESCRIPCION_NEW_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$DESCRIPCION_NEW_value}	</div>
+
+		
+</div>
+
+
+{END DESCRIPCION_NEW_fieldblock}
+											
+{BEGIN FECHA_PRESENTA_PROPUESTAS_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_FECHA_PRESENTA_PROPUESTAS}  r-vertical-field" data-fieldname="FECHA_PRESENTA_PROPUESTAS" data-signal-error-for="FECHA_PRESENTA_PROPUESTAS{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="FECHA_PRESENTA_PROPUESTAS" data-fieldname="FECHA_PRESENTA_PROPUESTAS" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_FECHA_PRESENTA_PROPUESTAS}">
+		
+		{BEGIN FECHA_PRESENTA_PROPUESTAS_label}{$label nopaa_master_f_cdp_int FECHA_PRESENTA_PROPUESTAS }{END FECHA_PRESENTA_PROPUESTAS_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$FECHA_PRESENTA_PROPUESTAS_value}	</div>
+
+		
+</div>
+
+
+{END FECHA_PRESENTA_PROPUESTAS_fieldblock}
+											
+{BEGIN REQ_OBS_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_REQ_OBS}  r-vertical-field" data-fieldname="REQ_OBS" data-signal-error-for="REQ_OBS{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="REQ_OBS" data-fieldname="REQ_OBS" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_REQ_OBS}">
+		
+		{BEGIN REQ_OBS_label}{$label nopaa_master_f_cdp_int REQ_OBS }{END REQ_OBS_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$REQ_OBS_value}	</div>
+
+		
+</div>
+
+
+{END REQ_OBS_fieldblock}
+											
+{BEGIN REQ_DATE_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_REQ_DATE}  r-vertical-field" data-fieldname="REQ_DATE" data-signal-error-for="REQ_DATE{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="REQ_DATE" data-fieldname="REQ_DATE" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_REQ_DATE}">
+		
+		{BEGIN REQ_DATE_label}{$label nopaa_master_f_cdp_int REQ_DATE }{END REQ_DATE_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$REQ_DATE_value}	</div>
+
+		
+</div>
+
+
+{END REQ_DATE_fieldblock}
+											
+{BEGIN SolModifica_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_SolModifica}  r-vertical-field" data-fieldname="SolModifica" data-signal-error-for="SolModifica{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="SolModifica" data-fieldname="SolModifica" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_SolModifica}">
+		
+		{BEGIN SolModifica_label}{$label nopaa_master_f_cdp_int SolModifica }{END SolModifica_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$SolModifica_value}	</div>
+
+		
+</div>
+
+
+{END SolModifica_fieldblock}
+											
+{BEGIN ContIdFK_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ContIdFK}  r-vertical-field" data-fieldname="ContIdFK" data-signal-error-for="ContIdFK{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="ContIdFK" data-fieldname="ContIdFK" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_ContIdFK}">
+		
+		{BEGIN ContIdFK_label}{$label nopaa_master_f_cdp_int ContIdFK }{END ContIdFK_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$ContIdFK_value}	</div>
+
+		
+</div>
+
+
+{END ContIdFK_fieldblock}
+											
+{BEGIN OBS_anulacion_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_OBS_anulacion}  r-vertical-field" data-fieldname="OBS_anulacion" data-signal-error-for="OBS_anulacion{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="OBS_anulacion" data-fieldname="OBS_anulacion" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_OBS_anulacion}">
+		
+		{BEGIN OBS_anulacion_label}{$label nopaa_master_f_cdp_int OBS_anulacion }{END OBS_anulacion_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$OBS_anulacion_value}	</div>
+
+		
+</div>
+
+
+{END OBS_anulacion_fieldblock}
+											
+{BEGIN USOS_TOTAL_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_USOS_TOTAL}  r-vertical-field" data-fieldname="USOS_TOTAL" data-signal-error-for="USOS_TOTAL{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="USOS_TOTAL" data-fieldname="USOS_TOTAL" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_USOS_TOTAL}">
+		
+		{BEGIN USOS_TOTAL_label}{$label nopaa_master_f_cdp_int USOS_TOTAL }{END USOS_TOTAL_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$USOS_TOTAL_value}	</div>
+
+		
+</div>
+
+
+{END USOS_TOTAL_fieldblock}
+											
+{BEGIN responsable_dep_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_responsable_dep}  r-vertical-field" data-fieldname="responsable_dep" data-signal-error-for="responsable_dep{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="responsable_dep" data-fieldname="responsable_dep" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_responsable_dep}">
+		
+		{BEGIN responsable_dep_label}{$label nopaa_master_f_cdp_int responsable_dep }{END responsable_dep_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$responsable_dep_value}	</div>
+
+		
+</div>
+
+
+{END responsable_dep_fieldblock}
+											
+{BEGIN responsable_depsup_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_responsable_depsup}  r-vertical-field" data-fieldname="responsable_depsup" data-signal-error-for="responsable_depsup{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field16" {$item_integrated_edit_field16} data-pageid="{$pageid}" data-field="responsable_depsup" data-fieldname="responsable_depsup" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_responsable_depsup}">
+		
+		{BEGIN responsable_depsup_label}{$label nopaa_master_f_cdp_int responsable_depsup }{END responsable_depsup_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$responsable_depsup_value}	</div>
+
+		
+</div>
+
+
+{END responsable_depsup_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+	</div>
+<div class="r-below">
+					{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="leftbar" {$form_below-grid} data-pageid="{$pageid}" >		
+	 
+				<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	
+">
+		 
+		{BEGIN back_button}
+<span data-itemtype="view_back_list" data-itemid="view_back_list" {$item_view_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="view_close" data-itemid="view_close" {$item_view_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" href="#" {$closebutton_attrs} >
+							Cerrar ventana			</a>
+</span>
+{END close_button}
+		</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	
+">
+		 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+										<span class="glyphicon glyphicon-menu-hamburger"></span>
+												<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN edit_page_button}
+	<li data-itemtype="view_edit" data-itemid="view_edit" {$item_view_edit} data-pageid="{$pageid}" data-small >
+				<a  href="nopaa_master_f_cdp_int_edit.php?{$editlink}" {$edit_page_button_attrs}  title="" >
+				
+		Editar		
+		</a>
+	</li>
+{END edit_page_button}
+					</ul>
+	</span>
+</span>
+		</div>					</div>
+			</div>		
+{END below-grid_block}
+	</div>
+
+
+
+
+										{$footer}
+				</div>
+			</div>
+			<div class="r-body-shadow">
+			</div>
+		</div>
+	{END body}
+	</body>
+</html>

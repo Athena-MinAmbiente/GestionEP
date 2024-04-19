@@ -1,0 +1,43 @@
+<?php
+$dalTableq_info_paa = array();
+$dalTableq_info_paa["PAA_ID"] = array("type"=>3,"varname"=>"PAA_ID", "name" => "PAA_ID", "autoInc" => "0");
+$dalTableq_info_paa["PAAID_INTEGRADO"] = array("type"=>3,"varname"=>"PAAID_INTEGRADO", "name" => "PAAID_INTEGRADO", "autoInc" => "0");
+$dalTableq_info_paa["ACT_ID"] = array("type"=>3,"varname"=>"ACT_ID", "name" => "ACT_ID", "autoInc" => "0");
+$dalTableq_info_paa["PROD_ID"] = array("type"=>3,"varname"=>"PROD_ID", "name" => "PROD_ID", "autoInc" => "0");
+$dalTableq_info_paa["COD_UNSPSC"] = array("type"=>200,"varname"=>"COD_UNSPSC", "name" => "COD_UNSPSC", "autoInc" => "0");
+$dalTableq_info_paa["DESCRIPCION_PAA"] = array("type"=>201,"varname"=>"DESCRIPCION_PAA", "name" => "DESCRIPCION_PAA", "autoInc" => "0");
+$dalTableq_info_paa["DESCRIPCION_PAA_F"] = array("type"=>201,"varname"=>"DESCRIPCION_PAA_F", "name" => "DESCRIPCION_PAA_F", "autoInc" => "0");
+$dalTableq_info_paa["MES_INICIO"] = array("type"=>16,"varname"=>"MES_INICIO", "name" => "MES_INICIO", "autoInc" => "0");
+$dalTableq_info_paa["MES_PRESENTA"] = array("type"=>16,"varname"=>"MES_PRESENTA", "name" => "MES_PRESENTA", "autoInc" => "0");
+$dalTableq_info_paa["DURACION_CONTRATO"] = array("type"=>5,"varname"=>"DURACION_CONTRATO", "name" => "DURACION_CONTRATO", "autoInc" => "0");
+$dalTableq_info_paa["DURACION_ESTIMADA_DMA"] = array("type"=>16,"varname"=>"DURACION_ESTIMADA_DMA", "name" => "DURACION_ESTIMADA_DMA", "autoInc" => "0");
+$dalTableq_info_paa["MODALIDAD"] = array("type"=>200,"varname"=>"MODALIDAD", "name" => "MODALIDAD", "autoInc" => "0");
+$dalTableq_info_paa["FUENTE_RECURSOS"] = array("type"=>16,"varname"=>"FUENTE_RECURSOS", "name" => "FUENTE_RECURSOS", "autoInc" => "0");
+$dalTableq_info_paa["VALOR_SOLICITADO"] = array("type"=>5,"varname"=>"VALOR_SOLICITADO", "name" => "VALOR_SOLICITADO", "autoInc" => "0");
+$dalTableq_info_paa["vigencia"] = array("type"=>2,"varname"=>"vigencia", "name" => "vigencia", "autoInc" => "0");
+$dalTableq_info_paa["PROD_UEJ"] = array("type"=>200,"varname"=>"PROD_UEJ", "name" => "PROD_UEJ", "autoInc" => "0");
+$dalTableq_info_paa["PROD_RUBRO"] = array("type"=>200,"varname"=>"PROD_RUBRO", "name" => "PROD_RUBRO", "autoInc" => "0");
+$dalTableq_info_paa["PROD_PRODUCTO"] = array("type"=>200,"varname"=>"PROD_PRODUCTO", "name" => "PROD_PRODUCTO", "autoInc" => "0");
+$dalTableq_info_paa["PROD_DESCRIPCION"] = array("type"=>200,"varname"=>"PROD_DESCRIPCION", "name" => "PROD_DESCRIPCION", "autoInc" => "0");
+$dalTableq_info_paa["PROD_DEP"] = array("type"=>3,"varname"=>"PROD_DEP", "name" => "PROD_DEP", "autoInc" => "0");
+$dalTableq_info_paa["PROD_USUARIORESP"] = array("type"=>200,"varname"=>"PROD_USUARIORESP", "name" => "PROD_USUARIORESP", "autoInc" => "0");
+$dalTableq_info_paa["ACT_VIGENCIA"] = array("type"=>2,"varname"=>"ACT_VIGENCIA", "name" => "ACT_VIGENCIA", "autoInc" => "0");
+$dalTableq_info_paa["ACT_TIPO"] = array("type"=>16,"varname"=>"ACT_TIPO", "name" => "ACT_TIPO", "autoInc" => "0");
+$dalTableq_info_paa["ACT_UEJ"] = array("type"=>200,"varname"=>"ACT_UEJ", "name" => "ACT_UEJ", "autoInc" => "0");
+$dalTableq_info_paa["ACT_RUBRO"] = array("type"=>200,"varname"=>"ACT_RUBRO", "name" => "ACT_RUBRO", "autoInc" => "0");
+$dalTableq_info_paa["ACT_PRODUCTO"] = array("type"=>200,"varname"=>"ACT_PRODUCTO", "name" => "ACT_PRODUCTO", "autoInc" => "0");
+$dalTableq_info_paa["ACT_ACTIVIDAD"] = array("type"=>200,"varname"=>"ACT_ACTIVIDAD", "name" => "ACT_ACTIVIDAD", "autoInc" => "0");
+$dalTableq_info_paa["ACT_RECURSOS_aCTIVIDAD"] = array("type"=>14,"varname"=>"ACT_RECURSOS_aCTIVIDAD", "name" => "ACT_RECURSOS_aCTIVIDAD", "autoInc" => "0");
+$dalTableq_info_paa["RUBRO_ID_FK"] = array("type"=>3,"varname"=>"RUBRO_ID_FK", "name" => "RUBRO_ID_FK", "autoInc" => "0");
+$dalTableq_info_paa["REC_F"] = array("type"=>3,"varname"=>"REC_F", "name" => "REC_F", "autoInc" => "0");
+$dalTableq_info_paa["REC_C"] = array("type"=>200,"varname"=>"REC_C", "name" => "REC_C", "autoInc" => "0");
+$dalTableq_info_paa["TIPO"] = array("type"=>200,"varname"=>"TIPO", "name" => "TIPO", "autoInc" => "0");
+$dalTableq_info_paa["ct_integrado"] = array("type"=>16,"varname"=>"ct_integrado", "name" => "ct_integrado", "autoInc" => "0");
+$dalTableq_info_paa["sys_user"] = array("type"=>200,"varname"=>"sys_user", "name" => "sys_user", "autoInc" => "0");
+$dalTableq_info_paa["transferir_a"] = array("type"=>3,"varname"=>"transferir_a", "name" => "transferir_a", "autoInc" => "0");
+$dalTableq_info_paa["patrimonio"] = array("type"=>200,"varname"=>"patrimonio", "name" => "patrimonio", "autoInc" => "0");
+$dalTableq_info_paa["UNIDAD_CONTRATACION"] = array("type"=>200,"varname"=>"UNIDAD_CONTRATACION", "name" => "UNIDAD_CONTRATACION", "autoInc" => "0");
+$dalTableq_info_paa["CDP_INTEGRADO"] = array("type"=>3,"varname"=>"CDP_INTEGRADO", "name" => "CDP_INTEGRADO", "autoInc" => "0");
+
+$dal_info["mincit_global_20x_at_127_0_0_1__q_info_paa"] = &$dalTableq_info_paa;
+?>

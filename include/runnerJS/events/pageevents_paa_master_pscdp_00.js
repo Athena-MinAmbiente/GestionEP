@@ -1,0 +1,2 @@
+
+Runner.pages.PageSettings.addPageEvent('paa_master_pscdp_00',Runner.pages.constants.PAGE_EDIT,"afterPageReady",function(pageObj,proxy,pageid,inlineRow,inlineObject,row){var ctrl=Runner.getControl(pageid,'USER_REG');ctrl.makeReadonly();var ctrla=Runner.getControl(pageid,'UNIDAD_CONTRATACION');ctrla.makeReadonly();});

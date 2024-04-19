@@ -1,0 +1,1180 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+						pagesummary: {
+		fillColor: '#ffffbb',
+	},
+	globalsummary: {
+		fillColor: '#ffe0b0',
+	},
+			group_1: {
+			fillColor: '#90EE90'
+		},
+		nbgroup_1: {
+			fillColor: '#90EE90'
+		},
+		header_1: {
+			fillColor: '#90EE90',
+			fontSize: 15,
+			bold: true
+		},
+		/* new style styles */
+		header_vigencia: {
+			fillColor: '#90EE90',
+			fontSize: 15,
+			bold: true
+		},
+		group_vigencia: {
+			fillColor: '#90EE90'
+		},
+
+			group_2: {
+			fillColor: '#ADD8E6'
+		},
+		nbgroup_2: {
+			fillColor: '#ADD8E6'
+		},
+		header_2: {
+			fillColor: '#ADD8E6',
+			fontSize: 15,
+			bold: true
+		},
+		/* new style styles */
+		header_UEJ: {
+			fillColor: '#ADD8E6',
+			fontSize: 15,
+			bold: true
+		},
+		group_UEJ: {
+			fillColor: '#ADD8E6'
+		},
+
+			group_3: {
+			fillColor: '#FFB6C1'
+		},
+		nbgroup_3: {
+			fillColor: '#FFB6C1'
+		},
+		header_3: {
+			fillColor: '#FFB6C1',
+			fontSize: 15,
+			bold: true
+		},
+		/* new style styles */
+		header_PROD_RUBRO: {
+			fillColor: '#FFB6C1',
+			fontSize: 15,
+			bold: true
+		},
+		group_PROD_RUBRO: {
+			fillColor: '#FFB6C1'
+		},
+
+			group_4: {
+			fillColor: '#FFFACD'
+		},
+		nbgroup_4: {
+			fillColor: '#FFFACD'
+		},
+		header_4: {
+			fillColor: '#FFFACD',
+			fontSize: 15,
+			bold: true
+		},
+		/* new style styles */
+		header_PROD_PRODUCTO: {
+			fillColor: '#FFFACD',
+			fontSize: 15,
+			bold: true
+		},
+		group_PROD_PRODUCTO: {
+			fillColor: '#FFFACD'
+		},
+
+		
+	blackshade: {
+		fontSize: 15,
+	},
+	summarycell: {
+		border:[false, true, false, true ]
+	},
+/*
+		.fieldnamesrow > * 
+	{
+		border:solid #808080 1px; 
+		border-left: none; 
+		border-right: none;
+	}
+	*/	
+			},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+		{BEGIN body}
+		{BEGIN embedded_grid_caption}
+			{
+				text: '{$jscaption q_info_paa_secgen_report_f}',
+			},
+		{END embedded_grid_caption}
+		{BEGIN embedded_page_title}
+			{
+				text: '{$jspagetitlelabel q_info_paa_secgen_report_f rprint}',
+			},
+		{END embedded_page_title}		
+		{ 
+			{BEGIN standalone_page}
+			pageBreak: 'before',
+			standAlonePage: true,
+			{END standalone_page}
+			{BEGIN embedded_grid}
+			embeddedPage: true,
+			{END embedded_grid}
+			layout: {
+				hLineWidth: function(i, node) { return 0.1; },
+				vLineWidth: function(i, node) { 
+					return 0.1; 
+				},
+				hLineColor: function(i, node) { return 'lightgray'; },
+				vLineColor: function(i, node) { return 'lightgray'; },
+			},
+			table: {
+				{BEGIN embedded_grid}
+				embeddedPage: true,
+				{END embedded_grid}
+				
+				tableForm: true,
+				headerRows: 1 
+								{BEGIN embedded_grid} -1 {END embedded_grid} ,
+
+				widths: [
+														"%",
+										"%",
+										"%",
+										"%",
+										"%",
+										"%",
+										"%",
+										"%",
+										"%",
+										"%",
+															],
+							
+				body: [
+				{BEGIN standalone_page}
+					[
+						{
+							colSpan: 10,
+							border:[false, false,false,false],
+							stack: [
+
+																										
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+			
+	
+			"text": [
+		
+				
+			{"text":"","hidden":"{$item_hide_print_pdf}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+											],
+						[
+																{
+	cellId: 'c',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+			
+	
+			"stack": [
+		
+				
+			{"text":{$pdf_image images/xlogo.png undefined 0},"hidden":"{$item_hide_image}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+											],
+						[
+																{
+	cellId: 'c2',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+			
+	
+			"stack": [
+		
+				
+			{"text":"{$jspagetitlelabel q_info_paa_secgen_report_f rprint}","hidden":"{$item_hide_print_header}","fontSize":30},
+				
+				
+			{"text":"{$printtabheader_text}","hidden":"{$item_hide_print_subheader}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+											],
+		
+		]
+	}
+}
+,
+								
+																										
+{
+	table: {
+	
+				
+		location: 'above-grid',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+			
+	
+			"text": [
+		
+				
+			{"text":"Página %current% / %total%","hidden":"{$item_hide_print_pages}","isHtml":true,"page_indicator":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+											],
+		
+		]
+	}
+}
+,
+															]
+						},
+					],
+				{END standalone_page}
+
+																
+
+
+{BEGIN grid_row}
+	 
+		{BEGIN vigencia_newgroup}							
+		[
+			{
+				colSpan: 10,
+				text: ['{$jslabel q_info_paa_secgen_report_f vigencia } ', {$vigencia_grval}],
+				style: 'header_1',
+			}
+		],
+		
+				{END vigencia_newgroup}
+	 
+		{BEGIN UEJ_newgroup}							
+		[
+			{
+				colSpan: 10,
+				text: ['{$jslabel q_info_paa_secgen_report_f UEJ } ', {$UEJ_grval}],
+				style: 'header_2',
+			}
+		],
+		
+				{END UEJ_newgroup}
+	 
+		{BEGIN PROD_RUBRO_newgroup}							
+		[
+			{
+				colSpan: 10,
+				text: ['{$jslabel q_info_paa_secgen_report_f PROD_RUBRO } ', {$PROD_RUBRO_grval}],
+				style: 'header_3',
+			}
+		],
+		
+				{END PROD_RUBRO_newgroup}
+	 
+		{BEGIN PROD_PRODUCTO_newgroup}							
+		[
+			{
+				colSpan: 10,
+				text: ['{$jslabel q_info_paa_secgen_report_f PROD_PRODUCTO } ', {$PROD_PRODUCTO_grval}],
+				style: 'header_4',
+			}
+		],
+		
+				[
+																																						{
+				text: '{$jslabel q_info_paa_secgen_report_f PAA_ID }',
+				style: 'blackshade',
+				alignment: '{$PAA_ID_align}',
+			},
+														{
+				text: '{$jslabel q_info_paa_secgen_report_f DESCRIPCION }',
+				style: 'blackshade',
+				alignment: '{$DESCRIPCION_align}',
+			},
+														{
+				text: '{$jslabel q_info_paa_secgen_report_f MES_INICIO }',
+				style: 'blackshade',
+				alignment: '{$MES_INICIO_align}',
+			},
+														{
+				text: '{$jslabel q_info_paa_secgen_report_f DURACION_CONTRATO }',
+				style: 'blackshade',
+				alignment: '{$DURACION_CONTRATO_align}',
+			},
+														{
+				text: '{$jslabel q_info_paa_secgen_report_f DURACION_ESTIMADA_DMA }',
+				style: 'blackshade',
+				alignment: '{$DURACION_ESTIMADA_DMA_align}',
+			},
+														{
+				text: '{$jslabel q_info_paa_secgen_report_f MODALIDAD_CONT }',
+				style: 'blackshade',
+				alignment: '{$MODALIDAD_CONT_align}',
+			},
+														{
+				text: '{$jslabel q_info_paa_secgen_report_f VALOR_SOLICITADO }',
+				style: 'blackshade',
+				alignment: '{$VALOR_SOLICITADO_align}',
+			},
+														{
+				text: '{$jslabel q_info_paa_secgen_report_f UNIDAD_CONTRATACION }',
+				style: 'blackshade',
+				alignment: '{$UNIDAD_CONTRATACION_align}',
+			},
+														{
+				text: '{$jslabel q_info_paa_secgen_report_f responsable_dep }',
+				style: 'blackshade',
+				alignment: '{$responsable_dep_align}',
+			},
+														{
+				text: '{$jslabel q_info_paa_secgen_report_f responsable_depsup }',
+				style: 'blackshade',
+				alignment: '{$responsable_depsup_align}',
+			},
+									],
+				{END PROD_PRODUCTO_newgroup}
+		
+
+			{BEGIN row_data}
+		[
+																																						{
+				text: {$PAA_ID_value},
+				alignment: '{$PAA_ID_align}',
+			},
+														{
+				text: {$DESCRIPCION_value},
+				alignment: '{$DESCRIPCION_align}',
+			},
+														{
+				text: {$MES_INICIO_value},
+				alignment: '{$MES_INICIO_align}',
+			},
+														{
+				text: {$DURACION_CONTRATO_value},
+				alignment: '{$DURACION_CONTRATO_align}',
+			},
+														{
+				text: {$DURACION_ESTIMADA_DMA_value},
+				alignment: '{$DURACION_ESTIMADA_DMA_align}',
+			},
+														{
+				text: {$MODALIDAD_CONT_value},
+				alignment: '{$MODALIDAD_CONT_align}',
+			},
+														{
+				text: {$VALOR_SOLICITADO_value},
+				alignment: '{$VALOR_SOLICITADO_align}',
+			},
+														{
+				text: {$UNIDAD_CONTRATACION_value},
+				alignment: '{$UNIDAD_CONTRATACION_align}',
+			},
+														{
+				text: {$responsable_dep_value},
+				alignment: '{$responsable_dep_align}',
+			},
+														{
+				text: {$responsable_depsup_value},
+				alignment: '{$responsable_depsup_align}',
+			},
+									],
+		{END row_data}
+	
+					{BEGIN PROD_PRODUCTO_endgroup}
+
+				[
+							
+				{
+					colSpan:10,
+					text: ['Resumen de {$jslabel q_info_paa_secgen_report_f PROD_PRODUCTO } ', 
+						{$PROD_PRODUCTO_grval},
+						' - ', 
+						{$groupPROD_PRODUCTO_total_cnt}, 
+						' Registros totales'],
+					style: 'group_4',
+				}
+					],
+				
+		
+				[
+										{
+				text: [
+				
+									'Sum ',
+											
+				],
+				style: 'group_4',
+			},
+										{
+				text: [
+				
+											
+				],
+				style: 'group_4',
+			},
+										{
+				text: [
+				
+											
+				],
+				style: 'group_4',
+			},
+										{
+				text: [
+				
+											
+				],
+				style: 'group_4',
+			},
+										{
+				text: [
+				
+											
+				],
+				style: 'group_4',
+			},
+										{
+				text: [
+				
+											
+				],
+				style: 'group_4',
+			},
+										{
+				text: [
+				
+													{$groupPROD_PRODUCTO_totalVALOR_SOLICITADO_sum},
+							
+				],
+				style: 'group_4',
+			},
+										{
+				text: [
+				
+											
+				],
+				style: 'group_4',
+			},
+										{
+				text: [
+				
+											
+				],
+				style: 'group_4',
+			},
+										{
+				text: [
+				
+											
+				],
+				style: 'group_4',
+			},
+					],
+		
+		
+		
+		
+		{END PROD_PRODUCTO_endgroup}
+							{BEGIN PROD_RUBRO_endgroup}
+
+				[
+							
+				{
+					colSpan:10,
+					text: ['Resumen de {$jslabel q_info_paa_secgen_report_f PROD_RUBRO } ', 
+						{$PROD_RUBRO_grval},
+						' - ', 
+						{$groupPROD_RUBRO_total_cnt}, 
+						' Registros totales'],
+					style: 'group_3',
+				}
+					],
+				
+		
+				[
+										{
+				text: [
+				
+									'Sum ',
+											
+				],
+				style: 'group_3',
+			},
+										{
+				text: [
+				
+											
+				],
+				style: 'group_3',
+			},
+										{
+				text: [
+				
+											
+				],
+				style: 'group_3',
+			},
+										{
+				text: [
+				
+											
+				],
+				style: 'group_3',
+			},
+										{
+				text: [
+				
+											
+				],
+				style: 'group_3',
+			},
+										{
+				text: [
+				
+											
+				],
+				style: 'group_3',
+			},
+										{
+				text: [
+				
+													{$groupPROD_RUBRO_totalVALOR_SOLICITADO_sum},
+							
+				],
+				style: 'group_3',
+			},
+										{
+				text: [
+				
+											
+				],
+				style: 'group_3',
+			},
+										{
+				text: [
+				
+											
+				],
+				style: 'group_3',
+			},
+										{
+				text: [
+				
+											
+				],
+				style: 'group_3',
+			},
+					],
+		
+		
+		
+		
+		{END PROD_RUBRO_endgroup}
+							{BEGIN UEJ_endgroup}
+
+				[
+							
+				{
+					colSpan:10,
+					text: ['Resumen de {$jslabel q_info_paa_secgen_report_f UEJ } ', 
+						{$UEJ_grval},
+						' - ', 
+						{$groupUEJ_total_cnt}, 
+						' Registros totales'],
+					style: 'group_2',
+				}
+					],
+				
+		
+				[
+										{
+				text: [
+				
+									'Sum ',
+											
+				],
+				style: 'group_2',
+			},
+										{
+				text: [
+				
+											
+				],
+				style: 'group_2',
+			},
+										{
+				text: [
+				
+											
+				],
+				style: 'group_2',
+			},
+										{
+				text: [
+				
+											
+				],
+				style: 'group_2',
+			},
+										{
+				text: [
+				
+											
+				],
+				style: 'group_2',
+			},
+										{
+				text: [
+				
+											
+				],
+				style: 'group_2',
+			},
+										{
+				text: [
+				
+													{$groupUEJ_totalVALOR_SOLICITADO_sum},
+							
+				],
+				style: 'group_2',
+			},
+										{
+				text: [
+				
+											
+				],
+				style: 'group_2',
+			},
+										{
+				text: [
+				
+											
+				],
+				style: 'group_2',
+			},
+										{
+				text: [
+				
+											
+				],
+				style: 'group_2',
+			},
+					],
+		
+		
+		
+		
+		{END UEJ_endgroup}
+							{BEGIN vigencia_endgroup}
+
+				[
+							
+				{
+					colSpan:10,
+					text: ['Resumen de {$jslabel q_info_paa_secgen_report_f vigencia } ', 
+						{$vigencia_grval},
+						' - ', 
+						{$groupvigencia_total_cnt}, 
+						' Registros totales'],
+					style: 'group_1',
+				}
+					],
+				
+		
+				[
+										{
+				text: [
+				
+									'Sum ',
+											
+				],
+				style: 'group_1',
+			},
+										{
+				text: [
+				
+											
+				],
+				style: 'group_1',
+			},
+										{
+				text: [
+				
+											
+				],
+				style: 'group_1',
+			},
+										{
+				text: [
+				
+											
+				],
+				style: 'group_1',
+			},
+										{
+				text: [
+				
+											
+				],
+				style: 'group_1',
+			},
+										{
+				text: [
+				
+											
+				],
+				style: 'group_1',
+			},
+										{
+				text: [
+				
+													{$groupvigencia_totalVALOR_SOLICITADO_sum},
+							
+				],
+				style: 'group_1',
+			},
+										{
+				text: [
+				
+											
+				],
+				style: 'group_1',
+			},
+										{
+				text: [
+				
+											
+				],
+				style: 'group_1',
+			},
+										{
+				text: [
+				
+											
+				],
+				style: 'group_1',
+			},
+					],
+		
+		
+		
+		
+		{END vigencia_endgroup}
+			
+{END grid_row}
+
+		[
+																																						{
+				text: '{$jslabel q_info_paa_secgen_report_f PAA_ID }',
+				alignment: '{$PAA_ID_align}',
+				style: 'blackshade'
+			},
+														{
+				text: '{$jslabel q_info_paa_secgen_report_f DESCRIPCION }',
+				alignment: '{$DESCRIPCION_align}',
+				style: 'blackshade'
+			},
+														{
+				text: '{$jslabel q_info_paa_secgen_report_f MES_INICIO }',
+				alignment: '{$MES_INICIO_align}',
+				style: 'blackshade'
+			},
+														{
+				text: '{$jslabel q_info_paa_secgen_report_f DURACION_CONTRATO }',
+				alignment: '{$DURACION_CONTRATO_align}',
+				style: 'blackshade'
+			},
+														{
+				text: '{$jslabel q_info_paa_secgen_report_f DURACION_ESTIMADA_DMA }',
+				alignment: '{$DURACION_ESTIMADA_DMA_align}',
+				style: 'blackshade'
+			},
+														{
+				text: '{$jslabel q_info_paa_secgen_report_f MODALIDAD_CONT }',
+				alignment: '{$MODALIDAD_CONT_align}',
+				style: 'blackshade'
+			},
+														{
+				text: '{$jslabel q_info_paa_secgen_report_f VALOR_SOLICITADO }',
+				alignment: '{$VALOR_SOLICITADO_align}',
+				style: 'blackshade'
+			},
+														{
+				text: '{$jslabel q_info_paa_secgen_report_f UNIDAD_CONTRATACION }',
+				alignment: '{$UNIDAD_CONTRATACION_align}',
+				style: 'blackshade'
+			},
+														{
+				text: '{$jslabel q_info_paa_secgen_report_f responsable_dep }',
+				alignment: '{$responsable_dep_align}',
+				style: 'blackshade'
+			},
+														{
+				text: '{$jslabel q_info_paa_secgen_report_f responsable_depsup }',
+				alignment: '{$responsable_depsup_align}',
+				style: 'blackshade'
+			},
+									],
+
+
+
+	
+		
+
+
+
+	[
+		{	
+			text: 'Resumen de la pagina {$page_total_cnt} - Registros totales',
+			colSpan: 10,
+			style: 'pagesummary',
+		}
+	],
+
+		[
+							{
+			text: [
+			 
+				'Sum ', 
+						
+							'', 
+						],
+			style: 'pagesummary',
+			
+					},
+							{
+			text: [
+						
+							'', 
+						],
+			style: 'pagesummary',
+			
+					},
+							{
+			text: [
+						
+							'', 
+						],
+			style: 'pagesummary',
+			
+					},
+							{
+			text: [
+						
+							'', 
+						],
+			style: 'pagesummary',
+			
+					},
+							{
+			text: [
+						
+							'', 
+						],
+			style: 'pagesummary',
+			
+					},
+							{
+			text: [
+						
+							'', 
+						],
+			style: 'pagesummary',
+			
+					},
+							{
+			text: [
+						
+							{$page_totalVALOR_SOLICITADO_sum},
+						],
+			style: 'pagesummary',
+			
+			 
+			alignment: '{$VALOR_SOLICITADO_align}',
+					},
+							{
+			text: [
+						
+							'', 
+						],
+			style: 'pagesummary',
+			
+					},
+							{
+			text: [
+						
+							'', 
+						],
+			style: 'pagesummary',
+			
+					},
+							{
+			text: [
+						
+							'', 
+						],
+			style: 'pagesummary',
+			
+					},
+			],
+	
+	
+	
+	
+
+
+{BEGIN global_summary}
+	[
+		{
+			text: 'Resumen global {$global_total_cnt} - Registros totales',
+			colSpan: 10,
+			style: 'globalsummary',
+		}
+	],
+
+		[
+							{
+			text: [
+							'Sum ',
+			
+							'',
+						],
+			style: 'globalsummary',
+
+					},
+							{
+			text: [
+			
+							'',
+						],
+			style: 'globalsummary',
+
+					},
+							{
+			text: [
+			
+							'',
+						],
+			style: 'globalsummary',
+
+					},
+							{
+			text: [
+			
+							'',
+						],
+			style: 'globalsummary',
+
+					},
+							{
+			text: [
+			
+							'',
+						],
+			style: 'globalsummary',
+
+					},
+							{
+			text: [
+			
+							'',
+						],
+			style: 'globalsummary',
+
+					},
+							{
+			text: [
+			
+							{$global_totalVALOR_SOLICITADO_sum},
+						],
+			style: 'globalsummary',
+
+			 
+			alignment: '{$VALOR_SOLICITADO_align}',
+					},
+							{
+			text: [
+			
+							'',
+						],
+			style: 'globalsummary',
+
+					},
+							{
+			text: [
+			
+							'',
+						],
+			style: 'globalsummary',
+
+					},
+							{
+			text: [
+			
+							'',
+						],
+			style: 'globalsummary',
+
+					},
+			],
+	
+	
+	
+	
+{END global_summary}
+									]
+			
+			}
+		},
+		{END body}
+	],
+	footer: [
+								
+{
+	table: {
+	
+				
+		location: 'below-grid',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+			
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+											],
+		
+		]
+	}
+}
+			],
+	};
+
+
+pdfFonts = {$pdfFonts};

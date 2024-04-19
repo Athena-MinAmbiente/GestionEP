@@ -1,0 +1,19 @@
+[data-cellid="grid_c3"][data-page="_global_login"][data-cellid="grid_c3"][data-page="_global_login"][data-cellid="grid_c3"][data-page="_global_login"] {
+  font-weight: bold;
+  font-size: 20px;
+  padding-top: 15px;
+}
+[data-page="_global_login"][data-itemid="text"] {
+  font-weight: bold;
+  font-family: "Roboto";
+}
+[data-page="_global_login"][data-itemid="snippet"] {
+  color: #22a9e1;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Roboto";
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+

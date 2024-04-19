@@ -1,0 +1,451 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-rprint" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="left"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}" >		
+	 
+				<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+		 
+		{BEGIN pdflink_block}
+<span data-itemtype="print_pdf" data-itemid="print_pdf" {$item_print_pdf} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-info   
+	pdflink" data-pdfpage="rprint" 
+data-scope="0" 
+data-split="0" 
+data-records="10" 
+data-orientation="portrait" 
+data-scale="100" 
+data-filename="Reporte de desagregación | Inversión" 
+data-pagesize="LETTER" 
+data-pagetype="rprint" 
+{$pdflink_attrs} >
+					<span class="fa fa-file-pdf-o"></span>
+							Vista PDF			</a>
+</span>
+{END pdflink_block}
+		</div>					</div>
+			 
+				<div class="row">
+			 
+				<div 
+	data-cellId="top_c" data-pageid="{$pageid}"	{$cell_top_c}
+	class=" r-ori-vert			col-md-12
+	
+">
+		 
+		<img src="{$file_url images/xlogo.png}" data-itemtype="image" data-itemid="image" {$item_image} data-pageid="{$pageid}" />
+		</div>					</div>
+			 
+				<div class="row">
+			 
+				<div 
+	data-cellId="top_c2" data-pageid="{$pageid}"	{$cell_top_c2}
+	class=" r-ori-vert			col-md-12
+	
+">
+		 
+		<h2 data-itemtype="print_header" data-itemid="print_header" {$item_print_header} data-pageid="{$pageid}" >{$pagetitlelabel q_reporte_oaps_000_Report rprint}</h2>
+	 
+		{BEGIN printtabheader}
+<span data-itemtype="print_subheader" data-itemid="print_subheader" {$item_print_subheader} data-pageid="{$pageid}" >
+{$printtabheader_text}
+</span>
+{END printtabheader}
+		</div>					</div>
+			</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}" >		
+	 
+				<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+		{BEGIN firstAboveGridCell}
+		 
+		<span data-itemtype="print_pages" data-itemid="print_pages" {$item_print_pages} data-pageid="{$pageid}" data-small >
+	{$print_pages_labelprint_pages}
+</span>			{END firstAboveGridCell}	
+	</div>					</div>
+			</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+<style>
+	td.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary {
+		background-color: #ffffbb;
+	}
+	td.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary {background-color: #ffe0b0;
+	}
+	.rnr-report {
+		width: 100%;
+	}
+			td.group_1{
+			background-color: #90EE90;
+		}
+		td.nbgroup_1{
+			background-color: #90EE90;
+		}
+		td.header_1 {
+			background-color: #90EE90; 
+			font-size: 120%;
+			padding: 2px 8px;
+			font-weight: bold;
+		}
+			td.group_2{
+			background-color: #ADD8E6;
+		}
+		td.nbgroup_2{
+			background-color: #ADD8E6;
+		}
+		td.header_2 {
+			background-color: #ADD8E6; 
+			font-size: 120%;
+			padding: 2px 8px;
+			font-weight: bold;
+		}
+			td.group_3{
+			background-color: #FFB6C1;
+		}
+		td.nbgroup_3{
+			background-color: #FFB6C1;
+		}
+		td.header_3 {
+			background-color: #FFB6C1; 
+			font-size: 120%;
+			padding: 2px 8px;
+			font-weight: bold;
+		}
+			td.group_4{
+			background-color: #FFFACD;
+		}
+		td.nbgroup_4{
+			background-color: #FFFACD;
+		}
+		td.header_4 {
+			background-color: #FFFACD; 
+			font-size: 120%;
+			padding: 2px 8px;
+			font-weight: bold;
+		}
+			td.group_5{
+			background-color: #7FFFD4;
+		}
+		td.nbgroup_5{
+			background-color: #7FFFD4;
+		}
+		td.header_5 {
+			background-color: #7FFFD4; 
+			font-size: 120%;
+			padding: 2px 8px;
+			font-weight: bold;
+		}
+		td.blackshade {
+		font-size: 120%;
+	}
+	.summaryrow > * {
+		border:solid #808080 1px; 
+		border-left: none; 
+		border-right: none;
+	}
+		.fieldnamesrow > * 
+	{
+		border:solid #808080 1px; 
+		border-left: none; 
+		border-right: none;
+	}
+	</style>
+<div id="grid_block{$id}" class="rnr-report-gridblock">
+						
+
+
+<table class="table table-hover table-bordered rnr-b-grid rnr-gridtable" cellpadding="0" >
+	<tbody>			
+{BEGIN grid_row}
+				<!--  group headers -->
+							{BEGIN VIGENCIA_newgroup}							
+		<tr class="group-spliter-1"  >
+			<td class="header_1" colspan="5">
+				{$label q_reporte_oaps_000_Report VIGENCIA }:&nbsp;
+				{$xVIGENCIA_grval}
+				<span data-itemtype="report_group_field" data-itemid="report_group_field" {$item_report_group_field} data-pageid="{$pageid}" data-field="VIGENCIA" data-fieldname="VIGENCIA" >
+{$VIGENCIA_grval}
+</span>			</td>
+		</tr>
+		
+				{END VIGENCIA_newgroup}
+							{BEGIN UEJ_newgroup}							
+		<tr class="group-spliter-2"  >
+			<td class="header_2" colspan="5">
+				{$label q_reporte_oaps_000_Report UEJ }:&nbsp;
+				{$xUEJ_grval}
+				<span data-itemtype="report_group_field" data-itemid="report_group_field1" {$item_report_group_field1} data-pageid="{$pageid}" data-field="UEJ" data-fieldname="UEJ" >
+{$UEJ_grval}
+</span>			</td>
+		</tr>
+		
+				{END UEJ_newgroup}
+							{BEGIN RUBRO_newgroup}							
+		<tr class="group-spliter-3"  >
+			<td class="header_3" colspan="5">
+				{$label q_reporte_oaps_000_Report RUBRO }:&nbsp;
+				{$xRUBRO_grval}
+				<span data-itemtype="report_group_field" data-itemid="report_group_field2" {$item_report_group_field2} data-pageid="{$pageid}" data-field="RUBRO" data-fieldname="RUBRO" >
+{$RUBRO_grval}
+</span>			</td>
+		</tr>
+		
+				{END RUBRO_newgroup}
+							{BEGIN DESCRUBRO_newgroup}							
+		<tr class="group-spliter-4"  >
+			<td class="header_4" colspan="5">
+				{$label q_reporte_oaps_000_Report DESCRUBRO }:&nbsp;
+				{$xDESCRUBRO_grval}
+				<span data-itemtype="report_group_field" data-itemid="report_group_field3" {$item_report_group_field3} data-pageid="{$pageid}" data-field="DESCRUBRO" data-fieldname="DESCRUBRO" >
+{$DESCRUBRO_grval}
+</span>			</td>
+		</tr>
+		
+				{END DESCRUBRO_newgroup}
+							{BEGIN PRESUPUESTO_newgroup}							
+		<tr class="group-spliter-5"  >
+			<td class="header_5" colspan="5">
+				{$label q_reporte_oaps_000_Report PRESUPUESTO }:&nbsp;
+				{$xPRESUPUESTO_grval}
+				<span data-itemtype="report_group_field" data-itemid="report_group_field4" {$item_report_group_field4} data-pageid="{$pageid}" data-field="PRESUPUESTO" data-fieldname="PRESUPUESTO" >
+{$PRESUPUESTO_grval}
+</span>			</td>
+		</tr>
+		
+				<tr class="fieldnamesrow group-headers">
+																																													<td class="blackshade {$fieldclass_PRODUCTO}">{$label q_reporte_oaps_000_Report PRODUCTO }</td>
+														<td class="blackshade {$fieldclass_REC}">{$label q_reporte_oaps_000_Report REC }</td>
+														<td class="blackshade {$fieldclass_BPIN}">{$label q_reporte_oaps_000_Report BPIN }</td>
+														<td class="blackshade {$fieldclass_DESCPRODUCTO}">{$label q_reporte_oaps_000_Report DESCPRODUCTO }</td>
+														<td class="blackshade {$fieldclass_PROD_PRESUPUESTO}">{$label q_reporte_oaps_000_Report PROD_PRESUPUESTO }</td>
+									</tr>
+				{END PRESUPUESTO_newgroup}
+		
+
+			<!--  data-->
+		{BEGIN row_data}
+		<tr >
+																																																																					<td class="data {$fieldclass_PRODUCTO}">
+			{$xPRODUCTO_value}
+			<span data-itemtype="report_grid_field" data-itemid="report_grid_field8" {$item_report_grid_field8} data-pageid="{$pageid}" data-field="PRODUCTO" data-fieldname="PRODUCTO" >
+{$PRODUCTO_value}
+</span>
+
+			</td>
+																		<td class="data {$fieldclass_REC}">
+			{$xREC_value}
+			<span data-itemtype="report_grid_field" data-itemid="report_grid_field5" {$item_report_grid_field5} data-pageid="{$pageid}" data-field="REC" data-fieldname="REC" >
+{$REC_value}
+</span>
+
+			</td>
+																		<td class="data {$fieldclass_BPIN}">
+			{$xBPIN_value}
+			<span data-itemtype="report_grid_field" data-itemid="report_grid_field6" {$item_report_grid_field6} data-pageid="{$pageid}" data-field="BPIN" data-fieldname="BPIN" >
+{$BPIN_value}
+</span>
+
+			</td>
+																		<td class="data {$fieldclass_DESCPRODUCTO}">
+			{$xDESCPRODUCTO_value}
+			<span data-itemtype="report_grid_field" data-itemid="report_grid_field9" {$item_report_grid_field9} data-pageid="{$pageid}" data-field="DESCPRODUCTO" data-fieldname="DESCPRODUCTO" >
+{$DESCPRODUCTO_value}
+</span>
+
+			</td>
+																		<td class="data {$fieldclass_PROD_PRESUPUESTO}">
+			{$xPROD_PRESUPUESTO_value}
+			<span data-itemtype="report_grid_field" data-itemid="report_grid_field10" {$item_report_grid_field10} data-pageid="{$pageid}" data-field="PROD_PRESUPUESTO" data-fieldname="PROD_PRESUPUESTO" >
+{$PROD_PRESUPUESTO_value}
+</span>
+
+			</td>
+									</tr>
+		{END row_data}
+	
+	<!---  group summary-->
+					{BEGIN PRESUPUESTO_endgroup}
+
+		<tr >
+					<td class="group_5" colspan="5">
+				Resumen de {$label q_reporte_oaps_000_Report PRESUPUESTO } {$PRESUPUESTO_grval} - <span class="summary-5" data-type="summary">
+					{$groupPRESUPUESTO_total_cnt}
+				</span> Registros totales			</td>			
+				</tr>
+		
+		
+		
+		
+			
+
+		{END PRESUPUESTO_endgroup}
+							{BEGIN DESCRUBRO_endgroup}
+
+		<tr >
+					<td class="group_4" colspan="5">
+				Resumen de {$label q_reporte_oaps_000_Report DESCRUBRO } {$DESCRUBRO_grval} - <span class="summary-4" data-type="summary">
+					{$groupDESCRUBRO_total_cnt}
+				</span> Registros totales			</td>			
+				</tr>
+		
+		
+		
+		
+			
+
+		{END DESCRUBRO_endgroup}
+							{BEGIN RUBRO_endgroup}
+
+		<tr >
+					<td class="group_3" colspan="5">
+				Resumen de {$label q_reporte_oaps_000_Report RUBRO } {$RUBRO_grval} - <span class="summary-3" data-type="summary">
+					{$groupRUBRO_total_cnt}
+				</span> Registros totales			</td>			
+				</tr>
+		
+		
+		
+		
+			
+
+		{END RUBRO_endgroup}
+							{BEGIN UEJ_endgroup}
+
+		<tr >
+					<td class="group_2" colspan="5">
+				Resumen de {$label q_reporte_oaps_000_Report UEJ } {$UEJ_grval} - <span class="summary-2" data-type="summary">
+					{$groupUEJ_total_cnt}
+				</span> Registros totales			</td>			
+				</tr>
+		
+		
+		
+		
+			
+
+		{END UEJ_endgroup}
+							{BEGIN VIGENCIA_endgroup}
+
+		<tr >
+					<td class="group_1" colspan="5">
+				Resumen de {$label q_reporte_oaps_000_Report VIGENCIA } {$VIGENCIA_grval} - <span class="summary-1" data-type="summary">
+					{$groupVIGENCIA_total_cnt}
+				</span> Registros totales			</td>			
+				</tr>
+		
+		
+		
+		
+			
+
+		{END VIGENCIA_endgroup}
+			
+{END grid_row}
+
+	{BEGIN summary_header}
+	<tr class="summary-header">
+						
+						
+						
+						
+						
+							<td class="blackshade {$fieldclass_PRODUCTO}">{$label q_reporte_oaps_000_Report PRODUCTO }</td>
+				
+							<td class="blackshade {$fieldclass_REC}">{$label q_reporte_oaps_000_Report REC }</td>
+				
+							<td class="blackshade {$fieldclass_BPIN}">{$label q_reporte_oaps_000_Report BPIN }</td>
+				
+							<td class="blackshade {$fieldclass_DESCPRODUCTO}">{$label q_reporte_oaps_000_Report DESCPRODUCTO }</td>
+				
+							<td class="blackshade {$fieldclass_PROD_PRESUPUESTO}">{$label q_reporte_oaps_000_Report PROD_PRESUPUESTO }</td>
+				
+			
+	</tr>
+	{END summary_header}			
+
+
+
+
+    
+    
+    {BEGIN page_summary}
+    <!-- page summary-->
+    <tr class="summaryrow summary-page">
+        <td class="pagesummary" colspan="10">Resumen de la pagina            <span class="page-summary" data-type="summary">{$page_total_cnt}</span> - Registros totales        </td>
+    </tr>
+	
+	
+	
+	    {END page_summary}
+
+	<!-- global summary-->
+	{BEGIN global_summary}
+    <tr class="summaryrow summary-global">
+        <td class="globalsummary" colspan="10">
+            Resumen global {$global_total_cnt} - Registros totales        </td>
+    </tr>
+
+	
+	
+	
+		{END global_summary}
+
+	</tbody>
+</table>			</div>
+{END grid_block}									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}" >		
+	 
+				<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+			</div>					</div>
+			</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

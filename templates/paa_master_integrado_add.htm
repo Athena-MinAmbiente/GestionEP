@@ -1,0 +1,1661 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-add"   
+		>
+	{BEGIN body}
+		<style>
+		{$containerCss}
+		</style>
+		<div class="r-vbar-page">
+			<div data-width="300px" data-fixed class="r-left clearfix {$leftbar_class}" >
+								<div data-location="left" id="form_left_{$pageid}" data-makeup="leftbar" {$form_left} data-pageid="{$pageid}">
+{BEGIN left_block}
+ 
+     
+         
+
+			<div data-cellId="left_c0" data-pageid="{$pageid}" data-logo-cell class="clearfix " data-itemid="logo" {$item_logo}>
+				{BEGIN logo_block}
+	<A data-itemtype="logo" data-itemid="logo" {$item_logo} data-pageid="{$pageid}" class="navbar-brand" href="{$home_link}" data-pageid="{$pageid}" {$logo_hiddenattr}>
+		{$logo}
+	</A>
+{END logo_block}
+				<button data-pageid="1" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target="[data-mobile-controlled]">	
+					<span class="sr-only">Toggle navigation</span>	
+					<span class="icon-bar"></span>					
+				</button>				
+			</div>
+		
+ 
+
+			<div class="clearfix " data-cellId="left_c0" data-pageid="{$pageid}" data-logo-cell data-itemid="expand_button" {$item_expand_button} data-topcell-item-type="expand_button" >
+				<span data-itemtype="expand_button" data-itemid="expand_button" {$item_expand_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Expandir" class="btn btn-link   
+	" href="#" >
+					<span class="glyphicon glyphicon-triangle-right"></span>
+										</a>
+</span>
+			</div>
+		
+     
+     
+         
+
+			<div data-cellId="left_c1" data-pageid="{$pageid}" class="clearfix  r-ori-vert " data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}">
+				{BEGIN menuitems_main}
+<ul data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}"	class="r-menu nav menu-treelike" 
+	data-menulevel="1"
+>
+
+{BEGIN item_children1}
+<li class="
+	{$item_current}">
+<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline data-menu-top >
+	{$item_separator}
+	<span class="r-menu-link r-menu-expanded "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren2}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren2}
+	</span>
+		<span class="r-menu-collapsed">{$item_collicon}{$item_firstcap}</span>
+	</a>
+{BEGIN item_showchildren2}
+<ul class="
+			nav collapse 
+			{$submenu_class}" 
+		id="submenu{$item_id}" data-menulevel="2">
+	{BEGIN item_children2}
+		{BEGIN item_menulink2}
+		<li class="
+						{$item_current}"
+		>
+			<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline >
+	{$item_separator}
+	<span class="r-menu-link  "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren2}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren2}
+	</span>
+	</a>
+			{BEGIN item_showchildren3}
+<ul class="
+			nav collapse 
+			{$submenu_class}" 
+		id="submenu{$item_id}" data-menulevel="3">
+	{BEGIN item_children3}
+		{BEGIN item_menulink3}
+		<li class="
+						{$item_current}"
+		>
+			<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline >
+	{$item_separator}
+	<span class="r-menu-link  "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren3}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren3}
+	</span>
+	</a>
+			{BEGIN item_showchildren4}
+<ul class="
+			nav collapse 
+			{$submenu_class}" 
+		id="submenu{$item_id}" data-menulevel="4">
+	{BEGIN item_children4}
+		{BEGIN item_menulink4}
+		<li class="
+						{$item_current}"
+		>
+			<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline >
+	{$item_separator}
+	<span class="r-menu-link  "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren4}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren4}
+	</span>
+	</a>
+			{BEGIN item_showchildren5}
+<ul class="
+			nav collapse 
+			{$submenu_class}" 
+		id="submenu{$item_id}" data-menulevel="5">
+	{BEGIN item_children5}
+		{BEGIN item_menulink5}
+		<li class="
+						{$item_current}"
+		>
+			<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline >
+	{$item_separator}
+	<span class="r-menu-link  "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren5}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren5}
+	</span>
+	</a>
+					</li>
+		{END item_menulink5}
+	{END item_children5}
+</ul>
+{END item_showchildren5}
+		</li>
+		{END item_menulink4}
+	{END item_children4}
+</ul>
+{END item_showchildren4}
+		</li>
+		{END item_menulink3}
+	{END item_children3}
+</ul>
+{END item_showchildren3}
+		</li>
+		{END item_menulink2}
+	{END item_children2}
+</ul>
+{END item_showchildren2}
+</li>
+{END item_children1}
+</ul>
+{END menuitems_main}
+			</div>
+		
+    {END left_block}
+</div>				</div>
+			<div class="r-content-col" data-resize-left="leftbar">
+				<div data-resize-left="leftbar"  data-fixed class="r-topheader" data-resize-name="topbar">
+									{BEGIN supertop_block}
+<nav class="navbar navbar-default" 
+	data-location="supertop" id="form_supertop_{$pageid}" data-makeup="leftbar" {$form_supertop} data-pageid="{$pageid}" >
+			 
+							 
+				<span class="navbar-form  navbar-header" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="expand_menu_button" {$item_expand_menu_button} data-topcell-item-type="expand_menu_button" >
+				<span data-itemtype="expand_menu_button" data-itemid="expand_menu_button" {$item_expand_menu_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Muestrame el menu" class="btn-link   
+	 glyphicon glyphicon-menu-hamburger" href="#" >		
+				
+								</a>
+</span>
+			</span>
+		 
+				<span class="navbar-form  navbar-collapse" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="collapse_button" {$item_collapse_button} data-topcell-item-type="collapse_button" >
+				<span data-itemtype="collapse_button" data-itemid="collapse_button" {$item_collapse_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Encubrir" class="btn-link   
+	 glyphicon glyphicon-triangle-left" href="#" >		
+				
+								</a>
+</span>
+			</span>
+							 
+							 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="loginform_login" {$item_loginform_login} data-topcell-item-type="loginform_login" >
+				{BEGIN guestloginbutton}
+<span data-itemtype="loginform_login" data-itemid="loginform_login" {$item_loginform_login} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" href="#" {$guestloginlink_attrs} >
+							Conectar			</a>
+</span>
+{END guestloginbutton}
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="username_button" {$item_username_button} data-topcell-item-type="username_button" >
+				{BEGIN loggedas_message}
+<span data-itemtype="username_button" data-itemid="username_button" {$item_username_button} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+			{BEGIN userbutton_icon}							<span class="glyphicon glyphicon-user"></span>
+						{END userbutton_icon}{$userbutton_image}			{$username}			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN userinfo_link}
+	<li data-itemtype="userinfo_link" data-itemid="userinfo_link" {$item_userinfo_link} data-pageid="{$pageid}" data-small >
+				<a  href="userinfo.php"  title="" >
+				
+		Perfil del usuario		
+		</a>
+	</li>
+{END userinfo_link}
+							{BEGIN logoutbutton}
+	<li data-itemtype="logout_link" data-itemid="logout_link" {$item_logout_link} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$logoutlink_attrs}  title="" >
+				
+		Desconectarse		
+		</a>
+	</li>
+{END logoutbutton}
+							{BEGIN adminarea_link}
+	<li data-itemtype="adminarea_link" data-itemid="adminarea_link" {$item_adminarea_link} data-pageid="{$pageid}" data-small >
+				<a  href="admin_rights_list.php"  title="" >
+				
+		Area Admin		
+		</a>
+	</li>
+{END adminarea_link}
+					</ul>
+	</span>
+</span>
+{END loggedas_message}
+			</span>
+								</nav>
+{END supertop_block}
+						{$locking}
+				</div>
+				<div class="r-body" data-resize-top="topbar" data-body-width="standard">
+					{$header}
+					<div class="r-top">
+									{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="leftbar" {$form_top} data-pageid="{$pageid}" >		
+	 
+				<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+		 
+		<h2 data-itemtype="add_header" data-itemid="add_header" {$item_add_header} data-pageid="{$pageid}" >{$pagetitlelabel paa_master_integrado add}</h2>
+		</div>					</div>
+			</div>		
+{END top_block}
+						</div>
+											<div class="r-above">
+					{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="leftbar" {$form_above-grid} data-pageid="{$pageid}" >		
+	 
+				<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+		{BEGIN firstAboveGridCell}
+		 
+		{BEGIN message_block}
+<div data-itemtype="add_message" data-itemid="add_message" {$item_add_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN message_back_button}
+		
+	<button class="btn btn-sm btn-default" {$backbutton_attrs}>Volver a la lista</button>
+	{END message_back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>Ver</button>
+{END view_page_button}
+{BEGIN edit_page_button}
+	<button class="btn btn-sm btn-default" {$edit_page_button_attrs}>Editar</button>
+{END edit_page_button}
+</div>
+</div>
+{END message_block}			{END firstAboveGridCell}	
+	</div>					</div>
+			</div>		
+{END above-grid_block}
+	</div>
+<div class="r-grid">
+	{BEGIN grid_tabs}
+  <ul class="nav nav-tabs bsgrid_tabs">
+	{$grid_tabs_content}
+  </ul>
+{END grid_tabs}
+					{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<div class="panel with-tabs panel-default form-tabs" data-itemtype="tabs" data-itemid="tabs" {$item_tabs} data-pageid="{$pageid}" data-page="paa_master_integrado_add">
+	<div class="panel-heading">
+		<ul class="nav nav-tabs" role="tablist">
+									<li role="presentation" class="active">
+				<a aria-controls="settings" role="tab" data-toggle="tab" href="#tab_section{$pageid}">
+					Objeto y duración				</a>
+			</li>
+										<li role="presentation" class="">
+				<a aria-controls="settings" role="tab" data-toggle="tab" href="#tab_section1{$pageid}">
+					Valor y Modalidad				</a>
+			</li>
+										<li role="presentation" class="">
+				<a aria-controls="settings" role="tab" data-toggle="tab" href="#tab_section3{$pageid}">
+					Vigencias futuras				</a>
+			</li>
+										<li role="presentation" class="">
+				<a aria-controls="settings" role="tab" data-toggle="tab" href="#tab_section2{$pageid}">
+									</a>
+			</li>
+									</ul>
+	</div>
+	<div class="panel-body">
+		<div class="tab-content">
+							<div role="tabpanel" class="tab-pane active" id="tab_section{$pageid}"> 
+			{BEGIN section_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="left"
+	data-location="section" id="form_section_{$pageid}" data-makeup="leftbar" {$form_section} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="2"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_section_0} >
+										
+
+{BEGIN cellblock_section_c2}
+<td
+	{$cell_section_c2}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c2" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN vigencia_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_vigencia}  r-vertical-field" 
+	data-signal-error-for="vigencia{$id}" {$required_attr_vigencia}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field21" {$item_integrated_edit_field21} data-pageid="{$pageid}" data-field="vigencia" data-fieldname="vigencia" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_vigencia}">
+		{BEGIN vigencia_label}{$label paa_master_integrado vigencia }{END vigencia_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$vigencia_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="vigencia" {$tooltipAttr paa_master_integrado vigencia } >
+		<div class="text-muted" >
+		{$tooltip paa_master_integrado vigencia }		</div>
+	</div>
+</div>
+
+
+{END vigencia_fieldblock}
+	
+								</td>
+			{END cellblock_section_c2}
+			 
+																
+
+{BEGIN cellblock_section_c3}
+<td
+	{$cell_section_c3}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c3" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN COD_UNSPSC_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_COD_UNSPSC}  r-vertical-field" 
+	data-signal-error-for="COD_UNSPSC{$id}" {$required_attr_COD_UNSPSC}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="COD_UNSPSC" data-fieldname="COD_UNSPSC" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_COD_UNSPSC}">
+		{BEGIN COD_UNSPSC_label}{$label paa_master_integrado COD_UNSPSC }{END COD_UNSPSC_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$COD_UNSPSC_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="COD_UNSPSC" {$tooltipAttr paa_master_integrado COD_UNSPSC } >
+		<div class="text-muted" >
+		{$tooltip paa_master_integrado COD_UNSPSC }		</div>
+	</div>
+</div>
+
+
+{END COD_UNSPSC_fieldblock}
+	
+								</td>
+			{END cellblock_section_c3}
+								</tr>
+	 
+	 
+														<tr {$row_section_1} >
+										
+
+{BEGIN cellblock_section_c1}
+<td
+	{$cell_section_c1}
+	class=" r-ori-vert"
+	
+			data-single
+			
+	ocolspan="2"		data-cellId="section_c1" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN DESCRIPCION_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_DESCRIPCION}  r-vertical-field" 
+	data-signal-error-for="DESCRIPCION{$id}" {$required_attr_DESCRIPCION}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="DESCRIPCION" data-fieldname="DESCRIPCION" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_DESCRIPCION}">
+		{BEGIN DESCRIPCION_label}{$label paa_master_integrado DESCRIPCION }{END DESCRIPCION_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$DESCRIPCION_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="DESCRIPCION" {$tooltipAttr paa_master_integrado DESCRIPCION } >
+		<div class="text-muted" >
+		{$tooltip paa_master_integrado DESCRIPCION }		</div>
+	</div>
+</div>
+
+
+{END DESCRIPCION_fieldblock}
+	
+								</td>
+			{END cellblock_section_c1}
+								</tr>
+	 
+	 
+														<tr {$row_section_2} >
+										
+
+{BEGIN cellblock_section_c8}
+<td
+	{$cell_section_c8}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c8" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN MES_INICIO_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_MES_INICIO}  r-vertical-field" 
+	data-signal-error-for="MES_INICIO{$id}" {$required_attr_MES_INICIO}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="MES_INICIO" data-fieldname="MES_INICIO" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_MES_INICIO}">
+		{BEGIN MES_INICIO_label}{$label paa_master_integrado MES_INICIO }{END MES_INICIO_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$MES_INICIO_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="MES_INICIO" {$tooltipAttr paa_master_integrado MES_INICIO } >
+		<div class="text-muted" >
+		{$tooltip paa_master_integrado MES_INICIO }		</div>
+	</div>
+</div>
+
+
+{END MES_INICIO_fieldblock}
+	
+								</td>
+			{END cellblock_section_c8}
+			 
+																
+
+{BEGIN cellblock_section_c9}
+<td
+	{$cell_section_c9}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c9" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN MES_PRESENTA_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_MES_PRESENTA}  r-vertical-field" 
+	data-signal-error-for="MES_PRESENTA{$id}" {$required_attr_MES_PRESENTA}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="MES_PRESENTA" data-fieldname="MES_PRESENTA" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_MES_PRESENTA}">
+		{BEGIN MES_PRESENTA_label}{$label paa_master_integrado MES_PRESENTA }{END MES_PRESENTA_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$MES_PRESENTA_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="MES_PRESENTA" {$tooltipAttr paa_master_integrado MES_PRESENTA } >
+		<div class="text-muted" >
+		{$tooltip paa_master_integrado MES_PRESENTA }		</div>
+	</div>
+</div>
+
+
+{END MES_PRESENTA_fieldblock}
+	
+								</td>
+			{END cellblock_section_c9}
+								</tr>
+	 
+	 
+														<tr {$row_section_3} >
+										
+
+{BEGIN cellblock_section_c6}
+<td
+	{$cell_section_c6}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c6" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN DURACION_CONTRATO_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_DURACION_CONTRATO}  r-vertical-field" 
+	data-signal-error-for="DURACION_CONTRATO{$id}" {$required_attr_DURACION_CONTRATO}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="DURACION_CONTRATO" data-fieldname="DURACION_CONTRATO" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_DURACION_CONTRATO}">
+		{BEGIN DURACION_CONTRATO_label}{$label paa_master_integrado DURACION_CONTRATO }{END DURACION_CONTRATO_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$DURACION_CONTRATO_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="DURACION_CONTRATO" {$tooltipAttr paa_master_integrado DURACION_CONTRATO } >
+		<div class="text-muted" >
+		{$tooltip paa_master_integrado DURACION_CONTRATO }		</div>
+	</div>
+</div>
+
+
+{END DURACION_CONTRATO_fieldblock}
+	
+								</td>
+			{END cellblock_section_c6}
+			 
+																
+
+{BEGIN cellblock_section_c7}
+<td
+	{$cell_section_c7}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c7" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN DURACION_ESTIMADA_DMA_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_DURACION_ESTIMADA_DMA}  r-vertical-field" 
+	data-signal-error-for="DURACION_ESTIMADA_DMA{$id}" {$required_attr_DURACION_ESTIMADA_DMA}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="DURACION_ESTIMADA_DMA" data-fieldname="DURACION_ESTIMADA_DMA" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_DURACION_ESTIMADA_DMA}">
+		{BEGIN DURACION_ESTIMADA_DMA_label}{$label paa_master_integrado DURACION_ESTIMADA_DMA }{END DURACION_ESTIMADA_DMA_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$DURACION_ESTIMADA_DMA_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="DURACION_ESTIMADA_DMA" {$tooltipAttr paa_master_integrado DURACION_ESTIMADA_DMA } >
+		<div class="text-muted" >
+		{$tooltip paa_master_integrado DURACION_ESTIMADA_DMA }		</div>
+	</div>
+</div>
+
+
+{END DURACION_ESTIMADA_DMA_fieldblock}
+	
+								</td>
+			{END cellblock_section_c7}
+								</tr>
+			</tbody></table>
+{END section_block}
+						</div>
+					<div role="tabpanel" class="tab-pane " id="tab_section1{$pageid}"> 
+			{BEGIN section1_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="left"
+	data-location="section1" id="form_section1_{$pageid}" data-makeup="leftbar" {$form_section1} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="2"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_section1_0} >
+										
+
+{BEGIN cellblock_section1_c6}
+<td
+	{$cell_section1_c6}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c6" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN MODALIDAD_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_MODALIDAD}  r-vertical-field" 
+	data-signal-error-for="MODALIDAD{$id}" {$required_attr_MODALIDAD}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="MODALIDAD" data-fieldname="MODALIDAD" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_MODALIDAD}">
+		{BEGIN MODALIDAD_label}{$label paa_master_integrado MODALIDAD }{END MODALIDAD_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$MODALIDAD_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="MODALIDAD" {$tooltipAttr paa_master_integrado MODALIDAD } >
+		<div class="text-muted" >
+		{$tooltip paa_master_integrado MODALIDAD }		</div>
+	</div>
+</div>
+
+
+{END MODALIDAD_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c6}
+			 
+																
+
+{BEGIN cellblock_section1_c7}
+<td
+	{$cell_section1_c7}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c7" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN FUENTE_RECURSOS_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_FUENTE_RECURSOS}  r-vertical-field" 
+	data-signal-error-for="FUENTE_RECURSOS{$id}" {$required_attr_FUENTE_RECURSOS}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="FUENTE_RECURSOS" data-fieldname="FUENTE_RECURSOS" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_FUENTE_RECURSOS}">
+		{BEGIN FUENTE_RECURSOS_label}{$label paa_master_integrado FUENTE_RECURSOS }{END FUENTE_RECURSOS_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$FUENTE_RECURSOS_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="FUENTE_RECURSOS" {$tooltipAttr paa_master_integrado FUENTE_RECURSOS } >
+		<div class="text-muted" >
+		{$tooltip paa_master_integrado FUENTE_RECURSOS }		</div>
+	</div>
+</div>
+
+
+{END FUENTE_RECURSOS_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c7}
+								</tr>
+	 
+	 
+														<tr {$row_section1_1} >
+										
+
+{BEGIN cellblock_section1_c1}
+<td
+	{$cell_section1_c1}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c1" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN VALOR_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_VALOR}  r-vertical-field" 
+	data-signal-error-for="VALOR{$id}" {$required_attr_VALOR}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="VALOR" data-fieldname="VALOR" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_VALOR}">
+		{BEGIN VALOR_label}{$label paa_master_integrado VALOR }{END VALOR_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$VALOR_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="VALOR" {$tooltipAttr paa_master_integrado VALOR } >
+		<div class="text-muted" >
+		{$tooltip paa_master_integrado VALOR }		</div>
+	</div>
+</div>
+
+
+{END VALOR_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c1}
+			 
+																
+
+{BEGIN cellblock_section1_c}
+<td
+	{$cell_section1_c}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN COD_UBICACION_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_COD_UBICACION}  r-vertical-field" 
+	data-signal-error-for="COD_UBICACION{$id}" {$required_attr_COD_UBICACION}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field16" {$item_integrated_edit_field16} data-pageid="{$pageid}" data-field="COD_UBICACION" data-fieldname="COD_UBICACION" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_COD_UBICACION}">
+		{BEGIN COD_UBICACION_label}{$label paa_master_integrado COD_UBICACION }{END COD_UBICACION_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$COD_UBICACION_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="COD_UBICACION" {$tooltipAttr paa_master_integrado COD_UBICACION } >
+		<div class="text-muted" >
+		{$tooltip paa_master_integrado COD_UBICACION }		</div>
+	</div>
+</div>
+
+
+{END COD_UBICACION_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c}
+								</tr>
+			</tbody></table>
+{END section1_block}
+						</div>
+					<div role="tabpanel" class="tab-pane " id="tab_section3{$pageid}"> 
+			{BEGIN section3_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="left"
+	data-location="section3" id="form_section3_{$pageid}" data-makeup="leftbar" {$form_section3} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="2"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_section3_0} >
+										
+
+{BEGIN cellblock_section3_c1}
+<td
+	{$cell_section3_c1}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section3_c1" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN VF_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_VF}  r-vertical-field" 
+	data-signal-error-for="VF{$id}" {$required_attr_VF}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="VF" data-fieldname="VF" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_VF}">
+		{BEGIN VF_label}{$label paa_master_integrado VF }{END VF_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$VF_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="VF" {$tooltipAttr paa_master_integrado VF } >
+		<div class="text-muted" >
+		{$tooltip paa_master_integrado VF }		</div>
+	</div>
+</div>
+
+
+{END VF_fieldblock}
+	
+								</td>
+			{END cellblock_section3_c1}
+			 
+																
+
+{BEGIN cellblock_section3_c}
+<td
+	{$cell_section3_c}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section3_c" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN ESTADO_VF_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ESTADO_VF}  r-vertical-field" 
+	data-signal-error-for="ESTADO_VF{$id}" {$required_attr_ESTADO_VF}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}" data-field="ESTADO_VF" data-fieldname="ESTADO_VF" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_ESTADO_VF}">
+		{BEGIN ESTADO_VF_label}{$label paa_master_integrado ESTADO_VF }{END ESTADO_VF_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$ESTADO_VF_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="ESTADO_VF" {$tooltipAttr paa_master_integrado ESTADO_VF } >
+		<div class="text-muted" >
+		{$tooltip paa_master_integrado ESTADO_VF }		</div>
+	</div>
+</div>
+
+
+{END ESTADO_VF_fieldblock}
+	
+								</td>
+			{END cellblock_section3_c}
+								</tr>
+	 
+	 
+														<tr {$row_section3_1} >
+										
+
+{BEGIN cellblock_section3_c2}
+<td
+	{$cell_section3_c2}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section3_c2" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN VALOR_VIGENCIA_FUTURA_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_VALOR_VIGENCIA_FUTURA}  r-vertical-field" 
+	data-signal-error-for="VALOR_VIGENCIA_FUTURA{$id}" {$required_attr_VALOR_VIGENCIA_FUTURA}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="VALOR_VIGENCIA_FUTURA" data-fieldname="VALOR_VIGENCIA_FUTURA" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_VALOR_VIGENCIA_FUTURA}">
+		{BEGIN VALOR_VIGENCIA_FUTURA_label}{$label paa_master_integrado VALOR_VIGENCIA_FUTURA }{END VALOR_VIGENCIA_FUTURA_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$VALOR_VIGENCIA_FUTURA_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="VALOR_VIGENCIA_FUTURA" {$tooltipAttr paa_master_integrado VALOR_VIGENCIA_FUTURA } >
+		<div class="text-muted" >
+		{$tooltip paa_master_integrado VALOR_VIGENCIA_FUTURA }		</div>
+	</div>
+</div>
+
+
+{END VALOR_VIGENCIA_FUTURA_fieldblock}
+	
+								</td>
+			{END cellblock_section3_c2}
+			 
+		
+							
+
+{BEGIN cellblock_section3_c3}
+<td
+	{$cell_section3_c3}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section3_c3" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_section3_c3}
+								</tr>
+	 
+	 
+														<tr {$row_section3_2} >
+										
+
+{BEGIN cellblock_section3_c8}
+<td
+	{$cell_section3_c8}
+	class=" r-ori-vert"
+	
+			data-single
+			
+	ocolspan="2"		data-cellId="section3_c8" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				<span data-itemtype="text" data-itemid="text" {$item_text} data-pageid="{$pageid}" data-small > 
+	<div class="alert alert-warning" role="alert">
+  A continuación indique el funcionario responsable del seguimiento a este PAA Integrado</div></span>
+	
+								</td>
+			{END cellblock_section3_c8}
+								</tr>
+	 
+	 
+														<tr {$row_section3_3} >
+										
+
+{BEGIN cellblock_section3_c9}
+<td
+	{$cell_section3_c9}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section3_c9" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN responsable_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_responsable}  r-vertical-field" 
+	data-signal-error-for="responsable{$id}" {$required_attr_responsable}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field20" {$item_integrated_edit_field20} data-pageid="{$pageid}" data-field="responsable" data-fieldname="responsable" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_responsable}">
+		{BEGIN responsable_label}{$label paa_master_integrado responsable }{END responsable_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$responsable_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="responsable" {$tooltipAttr paa_master_integrado responsable } >
+		<div class="text-muted" >
+		{$tooltip paa_master_integrado responsable }		</div>
+	</div>
+</div>
+
+
+{END responsable_fieldblock}
+	
+								</td>
+			{END cellblock_section3_c9}
+			 
+		
+							
+
+{BEGIN cellblock_section3_c10}
+<td
+	{$cell_section3_c10}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section3_c10" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_section3_c10}
+								</tr>
+	 
+	 
+														<tr {$row_section3_4} >
+										
+
+{BEGIN cellblock_section3_c6}
+<td
+	{$cell_section3_c6}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section3_c6" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN TIPOSOL_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_TIPOSOL}  r-vertical-field" 
+	data-signal-error-for="TIPOSOL{$id}" {$required_attr_TIPOSOL}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="TIPOSOL" data-fieldname="TIPOSOL" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_TIPOSOL}">
+		{BEGIN TIPOSOL_label}{$label paa_master_integrado TIPOSOL }{END TIPOSOL_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$TIPOSOL_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="TIPOSOL" {$tooltipAttr paa_master_integrado TIPOSOL } >
+		<div class="text-muted" >
+		{$tooltip paa_master_integrado TIPOSOL }		</div>
+	</div>
+</div>
+
+
+{END TIPOSOL_fieldblock}
+	
+								</td>
+			{END cellblock_section3_c6}
+			 
+																
+
+{BEGIN cellblock_section3_c7}
+<td
+	{$cell_section3_c7}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section3_c7" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN sys_status_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sys_status}  r-vertical-field" 
+	data-signal-error-for="sys_status{$id}" {$required_attr_sys_status}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field24" {$item_integrated_edit_field24} data-pageid="{$pageid}" data-field="sys_status" data-fieldname="sys_status" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_sys_status}">
+		{BEGIN sys_status_label}{$label paa_master_integrado sys_status }{END sys_status_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$sys_status_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="sys_status" {$tooltipAttr paa_master_integrado sys_status } >
+		<div class="text-muted" >
+		{$tooltip paa_master_integrado sys_status }		</div>
+	</div>
+</div>
+
+
+{END sys_status_fieldblock}
+	
+								</td>
+			{END cellblock_section3_c7}
+								</tr>
+	 
+	 
+														<tr {$row_section3_5} >
+										
+
+{BEGIN cellblock_section3_c4}
+<td
+	{$cell_section3_c4}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section3_c4" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN UNIDAD_CONTRATACION_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_UNIDAD_CONTRATACION}  r-vertical-field" 
+	data-signal-error-for="UNIDAD_CONTRATACION{$id}" {$required_attr_UNIDAD_CONTRATACION}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field15" {$item_integrated_edit_field15} data-pageid="{$pageid}" data-field="UNIDAD_CONTRATACION" data-fieldname="UNIDAD_CONTRATACION" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_UNIDAD_CONTRATACION}">
+		{BEGIN UNIDAD_CONTRATACION_label}{$label paa_master_integrado UNIDAD_CONTRATACION }{END UNIDAD_CONTRATACION_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$UNIDAD_CONTRATACION_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="UNIDAD_CONTRATACION" {$tooltipAttr paa_master_integrado UNIDAD_CONTRATACION } >
+		<div class="text-muted" >
+		{$tooltip paa_master_integrado UNIDAD_CONTRATACION }		</div>
+	</div>
+</div>
+
+
+{END UNIDAD_CONTRATACION_fieldblock}
+	
+								</td>
+			{END cellblock_section3_c4}
+			 
+																
+
+{BEGIN cellblock_section3_c5}
+<td
+	{$cell_section3_c5}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section3_c5" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN registrado_por_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_registrado_por}  r-vertical-field" 
+	data-signal-error-for="registrado_por{$id}" {$required_attr_registrado_por}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field19" {$item_integrated_edit_field19} data-pageid="{$pageid}" data-field="registrado_por" data-fieldname="registrado_por" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_registrado_por}">
+		{BEGIN registrado_por_label}{$label paa_master_integrado registrado_por }{END registrado_por_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$registrado_por_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="registrado_por" {$tooltipAttr paa_master_integrado registrado_por } >
+		<div class="text-muted" >
+		{$tooltip paa_master_integrado registrado_por }		</div>
+	</div>
+</div>
+
+
+{END registrado_por_fieldblock}
+	
+								</td>
+			{END cellblock_section3_c5}
+								</tr>
+			</tbody></table>
+{END section3_block}
+						</div>
+					<div role="tabpanel" class="tab-pane " id="tab_section2{$pageid}"> 
+			{BEGIN section2_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="left"
+	data-location="section2" id="form_section2_{$pageid}" data-makeup="leftbar" {$form_section2} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="3"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr {$row_section2_0} >
+										
+
+{BEGIN cellblock_section2_c1}
+<td
+	{$cell_section2_c1}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section2_c1" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN RESPONSABLE_NOMBRE_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_RESPONSABLE_NOMBRE}  r-vertical-field" 
+	data-signal-error-for="RESPONSABLE_NOMBRE{$id}" {$required_attr_RESPONSABLE_NOMBRE}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field17" {$item_integrated_edit_field17} data-pageid="{$pageid}" data-field="RESPONSABLE_NOMBRE" data-fieldname="RESPONSABLE_NOMBRE" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_RESPONSABLE_NOMBRE}">
+		{BEGIN RESPONSABLE_NOMBRE_label}{$label paa_master_integrado RESPONSABLE_NOMBRE }{END RESPONSABLE_NOMBRE_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$RESPONSABLE_NOMBRE_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="RESPONSABLE_NOMBRE" {$tooltipAttr paa_master_integrado RESPONSABLE_NOMBRE } >
+		<div class="text-muted" >
+		{$tooltip paa_master_integrado RESPONSABLE_NOMBRE }		</div>
+	</div>
+</div>
+
+
+{END RESPONSABLE_NOMBRE_fieldblock}
+	
+								</td>
+			{END cellblock_section2_c1}
+			 
+		
+							
+
+{BEGIN cellblock_section2_c2}
+<td
+	{$cell_section2_c2}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section2_c2" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_section2_c2}
+			 
+																
+
+{BEGIN cellblock_section2_c}
+<td
+	{$cell_section2_c}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section2_c" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN RESPONSABLE_TELEFONO_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_RESPONSABLE_TELEFONO}  r-vertical-field" 
+	data-signal-error-for="RESPONSABLE_TELEFONO{$id}" {$required_attr_RESPONSABLE_TELEFONO}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field18" {$item_integrated_edit_field18} data-pageid="{$pageid}" data-field="RESPONSABLE_TELEFONO" data-fieldname="RESPONSABLE_TELEFONO" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_RESPONSABLE_TELEFONO}">
+		{BEGIN RESPONSABLE_TELEFONO_label}{$label paa_master_integrado RESPONSABLE_TELEFONO }{END RESPONSABLE_TELEFONO_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$RESPONSABLE_TELEFONO_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="RESPONSABLE_TELEFONO" {$tooltipAttr paa_master_integrado RESPONSABLE_TELEFONO } >
+		<div class="text-muted" >
+		{$tooltip paa_master_integrado RESPONSABLE_TELEFONO }		</div>
+	</div>
+</div>
+
+
+{END RESPONSABLE_TELEFONO_fieldblock}
+	
+								</td>
+			{END cellblock_section2_c}
+								</tr>
+	 
+	 
+														<tr {$row_section2_1} >
+										
+
+{BEGIN cellblock_section2_c3}
+<td
+	{$cell_section2_c3}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section2_c3" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN sys_user_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sys_user}  r-vertical-field" 
+	data-signal-error-for="sys_user{$id}" {$required_attr_sys_user}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field22" {$item_integrated_edit_field22} data-pageid="{$pageid}" data-field="sys_user" data-fieldname="sys_user" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_sys_user}">
+		{BEGIN sys_user_label}{$label paa_master_integrado sys_user }{END sys_user_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$sys_user_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="sys_user" {$tooltipAttr paa_master_integrado sys_user } >
+		<div class="text-muted" >
+		{$tooltip paa_master_integrado sys_user }		</div>
+	</div>
+</div>
+
+
+{END sys_user_fieldblock}
+	
+								</td>
+			{END cellblock_section2_c3}
+			 
+																
+
+{BEGIN cellblock_section2_c4}
+<td
+	{$cell_section2_c4}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section2_c4" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN sys_date_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sys_date}  r-vertical-field" 
+	data-signal-error-for="sys_date{$id}" {$required_attr_sys_date}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field23" {$item_integrated_edit_field23} data-pageid="{$pageid}" data-field="sys_date" data-fieldname="sys_date" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_sys_date}">
+		{BEGIN sys_date_label}{$label paa_master_integrado sys_date }{END sys_date_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$sys_date_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="sys_date" {$tooltipAttr paa_master_integrado sys_date } >
+		<div class="text-muted" >
+		{$tooltip paa_master_integrado sys_date }		</div>
+	</div>
+</div>
+
+
+{END sys_date_fieldblock}
+	
+								</td>
+			{END cellblock_section2_c4}
+			 
+																
+
+{BEGIN cellblock_section2_c5}
+<td
+	{$cell_section2_c5}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section2_c5" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN REQ_MAILNOT_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_REQ_MAILNOT}  r-vertical-field" 
+	data-signal-error-for="REQ_MAILNOT{$id}" {$required_attr_REQ_MAILNOT}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field27" {$item_integrated_edit_field27} data-pageid="{$pageid}" data-field="REQ_MAILNOT" data-fieldname="REQ_MAILNOT" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_REQ_MAILNOT}">
+		{BEGIN REQ_MAILNOT_label}{$label paa_master_integrado REQ_MAILNOT }{END REQ_MAILNOT_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$REQ_MAILNOT_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="REQ_MAILNOT" {$tooltipAttr paa_master_integrado REQ_MAILNOT } >
+		<div class="text-muted" >
+		{$tooltip paa_master_integrado REQ_MAILNOT }		</div>
+	</div>
+</div>
+
+
+{END REQ_MAILNOT_fieldblock}
+	
+								</td>
+			{END cellblock_section2_c5}
+								</tr>
+	 
+	 
+														<tr {$row_section2_2} >
+										
+
+{BEGIN cellblock_section2_c6}
+<td
+	{$cell_section2_c6}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section2_c6" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN ct_integrado_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ct_integrado}  r-vertical-field" 
+	data-signal-error-for="ct_integrado{$id}" {$required_attr_ct_integrado}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="ct_integrado" data-fieldname="ct_integrado" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_ct_integrado}">
+		{BEGIN ct_integrado_label}{$label paa_master_integrado ct_integrado }{END ct_integrado_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$ct_integrado_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="ct_integrado" {$tooltipAttr paa_master_integrado ct_integrado } >
+		<div class="text-muted" >
+		{$tooltip paa_master_integrado ct_integrado }		</div>
+	</div>
+</div>
+
+
+{END ct_integrado_fieldblock}
+	
+								</td>
+			{END cellblock_section2_c6}
+			 
+		
+							
+
+{BEGIN cellblock_section2_c7}
+<td
+	{$cell_section2_c7}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section2_c7" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_section2_c7}
+			 
+		
+							
+
+{BEGIN cellblock_section2_c8}
+<td
+	{$cell_section2_c8}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section2_c8" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_section2_c8}
+								</tr>
+			</tbody></table>
+{END section2_block}
+						</div>
+				</div>
+	</div>
+</div>  	
+				{END grid_block}
+	</div>
+<div class="r-below">
+					{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="leftbar" {$form_below-grid} data-pageid="{$pageid}" >		
+	 
+				<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	
+">
+		 
+		<span data-itemtype="add_save" data-itemid="add_save" {$item_add_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							Guardar			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="add_back_list" data-itemid="add_back_list" {$item_add_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="backButton{$id}" >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="add_cancel" data-itemid="add_cancel" {$item_add_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Cancelar			</a>
+</span>
+{END cancel_button}
+		</div>					</div>
+			</div>		
+{END below-grid_block}
+	</div>
+
+
+
+
+										{$footer}
+				</div>
+			</div>
+			<div class="r-body-shadow">
+			</div>
+		</div>
+	{END body}
+	</body>
+</html>

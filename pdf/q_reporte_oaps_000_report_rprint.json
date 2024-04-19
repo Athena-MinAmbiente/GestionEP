@@ -1,0 +1,691 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+						pagesummary: {
+		fillColor: '#ffffbb',
+	},
+	globalsummary: {
+		fillColor: '#ffe0b0',
+	},
+			group_1: {
+			fillColor: '#90EE90'
+		},
+		nbgroup_1: {
+			fillColor: '#90EE90'
+		},
+		header_1: {
+			fillColor: '#90EE90',
+			fontSize: 15,
+			bold: true
+		},
+		/* new style styles */
+		header_VIGENCIA: {
+			fillColor: '#90EE90',
+			fontSize: 15,
+			bold: true
+		},
+		group_VIGENCIA: {
+			fillColor: '#90EE90'
+		},
+
+			group_2: {
+			fillColor: '#ADD8E6'
+		},
+		nbgroup_2: {
+			fillColor: '#ADD8E6'
+		},
+		header_2: {
+			fillColor: '#ADD8E6',
+			fontSize: 15,
+			bold: true
+		},
+		/* new style styles */
+		header_UEJ: {
+			fillColor: '#ADD8E6',
+			fontSize: 15,
+			bold: true
+		},
+		group_UEJ: {
+			fillColor: '#ADD8E6'
+		},
+
+			group_3: {
+			fillColor: '#FFB6C1'
+		},
+		nbgroup_3: {
+			fillColor: '#FFB6C1'
+		},
+		header_3: {
+			fillColor: '#FFB6C1',
+			fontSize: 15,
+			bold: true
+		},
+		/* new style styles */
+		header_RUBRO: {
+			fillColor: '#FFB6C1',
+			fontSize: 15,
+			bold: true
+		},
+		group_RUBRO: {
+			fillColor: '#FFB6C1'
+		},
+
+			group_4: {
+			fillColor: '#FFFACD'
+		},
+		nbgroup_4: {
+			fillColor: '#FFFACD'
+		},
+		header_4: {
+			fillColor: '#FFFACD',
+			fontSize: 15,
+			bold: true
+		},
+		/* new style styles */
+		header_DESCRUBRO: {
+			fillColor: '#FFFACD',
+			fontSize: 15,
+			bold: true
+		},
+		group_DESCRUBRO: {
+			fillColor: '#FFFACD'
+		},
+
+			group_5: {
+			fillColor: '#7FFFD4'
+		},
+		nbgroup_5: {
+			fillColor: '#7FFFD4'
+		},
+		header_5: {
+			fillColor: '#7FFFD4',
+			fontSize: 15,
+			bold: true
+		},
+		/* new style styles */
+		header_PRESUPUESTO: {
+			fillColor: '#7FFFD4',
+			fontSize: 15,
+			bold: true
+		},
+		group_PRESUPUESTO: {
+			fillColor: '#7FFFD4'
+		},
+
+		
+	blackshade: {
+		fontSize: 15,
+	},
+	summarycell: {
+		border:[false, true, false, true ]
+	},
+/*
+		.fieldnamesrow > * 
+	{
+		border:solid #808080 1px; 
+		border-left: none; 
+		border-right: none;
+	}
+	*/	
+			},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+		{BEGIN body}
+		{BEGIN embedded_grid_caption}
+			{
+				text: '{$jscaption q_reporte_oaps_000_Report}',
+			},
+		{END embedded_grid_caption}
+		{BEGIN embedded_page_title}
+			{
+				text: '{$jspagetitlelabel q_reporte_oaps_000_Report rprint}',
+			},
+		{END embedded_page_title}		
+		{ 
+			{BEGIN standalone_page}
+			pageBreak: 'before',
+			standAlonePage: true,
+			{END standalone_page}
+			{BEGIN embedded_grid}
+			embeddedPage: true,
+			{END embedded_grid}
+			layout: {
+				hLineWidth: function(i, node) { return 0.1; },
+				vLineWidth: function(i, node) { 
+					return 0.1; 
+				},
+				hLineColor: function(i, node) { return 'lightgray'; },
+				vLineColor: function(i, node) { return 'lightgray'; },
+			},
+			table: {
+				{BEGIN embedded_grid}
+				embeddedPage: true,
+				{END embedded_grid}
+				
+				tableForm: true,
+				headerRows: 1 
+								{BEGIN embedded_grid} -1 {END embedded_grid} ,
+
+				widths: [
+														"%",
+										"%",
+										"%",
+										"%",
+										"%",
+															],
+							
+				body: [
+				{BEGIN standalone_page}
+					[
+						{
+							colSpan: 5,
+							border:[false, false,false,false],
+							stack: [
+
+																										
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+			
+	
+			"text": [
+		
+				
+			{"text":"","hidden":"{$item_hide_print_pdf}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+											],
+						[
+																{
+	cellId: 'c',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+			
+	
+			"stack": [
+		
+				
+			{"text":{$pdf_image images/xlogo.png undefined 0},"hidden":"{$item_hide_image}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+											],
+						[
+																{
+	cellId: 'c2',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+			
+	
+			"stack": [
+		
+				
+			{"text":"{$jspagetitlelabel q_reporte_oaps_000_Report rprint}","hidden":"{$item_hide_print_header}","fontSize":30},
+				
+				
+			{"text":"{$printtabheader_text}","hidden":"{$item_hide_print_subheader}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+											],
+		
+		]
+	}
+}
+,
+								
+																										
+{
+	table: {
+	
+				
+		location: 'above-grid',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+			
+	
+			"text": [
+		
+				
+			{"text":"Página %current% / %total%","hidden":"{$item_hide_print_pages}","isHtml":true,"page_indicator":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+											],
+		
+		]
+	}
+}
+,
+															]
+						},
+					],
+				{END standalone_page}
+
+																
+
+
+{BEGIN grid_row}
+	 
+		{BEGIN VIGENCIA_newgroup}							
+		[
+			{
+				colSpan: 5,
+				text: ['{$jslabel q_reporte_oaps_000_Report VIGENCIA } ', {$VIGENCIA_grval}],
+				style: 'header_1',
+			}
+		],
+		
+				{END VIGENCIA_newgroup}
+	 
+		{BEGIN UEJ_newgroup}							
+		[
+			{
+				colSpan: 5,
+				text: ['{$jslabel q_reporte_oaps_000_Report UEJ } ', {$UEJ_grval}],
+				style: 'header_2',
+			}
+		],
+		
+				{END UEJ_newgroup}
+	 
+		{BEGIN RUBRO_newgroup}							
+		[
+			{
+				colSpan: 5,
+				text: ['{$jslabel q_reporte_oaps_000_Report RUBRO } ', {$RUBRO_grval}],
+				style: 'header_3',
+			}
+		],
+		
+				{END RUBRO_newgroup}
+	 
+		{BEGIN DESCRUBRO_newgroup}							
+		[
+			{
+				colSpan: 5,
+				text: ['{$jslabel q_reporte_oaps_000_Report DESCRUBRO } ', {$DESCRUBRO_grval}],
+				style: 'header_4',
+			}
+		],
+		
+				{END DESCRUBRO_newgroup}
+	 
+		{BEGIN PRESUPUESTO_newgroup}							
+		[
+			{
+				colSpan: 5,
+				text: ['{$jslabel q_reporte_oaps_000_Report PRESUPUESTO } ', {$PRESUPUESTO_grval}],
+				style: 'header_5',
+			}
+		],
+		
+				[
+																																													{
+				text: '{$jslabel q_reporte_oaps_000_Report PRODUCTO }',
+				style: 'blackshade',
+				alignment: '{$PRODUCTO_align}',
+			},
+														{
+				text: '{$jslabel q_reporte_oaps_000_Report REC }',
+				style: 'blackshade',
+				alignment: '{$REC_align}',
+			},
+														{
+				text: '{$jslabel q_reporte_oaps_000_Report BPIN }',
+				style: 'blackshade',
+				alignment: '{$BPIN_align}',
+			},
+														{
+				text: '{$jslabel q_reporte_oaps_000_Report DESCPRODUCTO }',
+				style: 'blackshade',
+				alignment: '{$DESCPRODUCTO_align}',
+			},
+														{
+				text: '{$jslabel q_reporte_oaps_000_Report PROD_PRESUPUESTO }',
+				style: 'blackshade',
+				alignment: '{$PROD_PRESUPUESTO_align}',
+			},
+									],
+				{END PRESUPUESTO_newgroup}
+		
+
+			{BEGIN row_data}
+		[
+																																													{
+				text: {$PRODUCTO_value},
+				alignment: '{$PRODUCTO_align}',
+			},
+														{
+				text: {$REC_value},
+				alignment: '{$REC_align}',
+			},
+														{
+				text: {$BPIN_value},
+				alignment: '{$BPIN_align}',
+			},
+														{
+				text: {$DESCPRODUCTO_value},
+				alignment: '{$DESCPRODUCTO_align}',
+			},
+														{
+				text: {$PROD_PRESUPUESTO_value},
+				alignment: '{$PROD_PRESUPUESTO_align}',
+			},
+									],
+		{END row_data}
+	
+					{BEGIN PRESUPUESTO_endgroup}
+
+				[
+							
+				{
+					colSpan:5,
+					text: ['Resumen de {$jslabel q_reporte_oaps_000_Report PRESUPUESTO } ', 
+						{$PRESUPUESTO_grval},
+						' - ', 
+						{$groupPRESUPUESTO_total_cnt}, 
+						' Registros totales'],
+					style: 'group_5',
+				}
+					],
+				
+		
+		
+		
+		
+		
+		{END PRESUPUESTO_endgroup}
+							{BEGIN DESCRUBRO_endgroup}
+
+				[
+							
+				{
+					colSpan:5,
+					text: ['Resumen de {$jslabel q_reporte_oaps_000_Report DESCRUBRO } ', 
+						{$DESCRUBRO_grval},
+						' - ', 
+						{$groupDESCRUBRO_total_cnt}, 
+						' Registros totales'],
+					style: 'group_4',
+				}
+					],
+				
+		
+		
+		
+		
+		
+		{END DESCRUBRO_endgroup}
+							{BEGIN RUBRO_endgroup}
+
+				[
+							
+				{
+					colSpan:5,
+					text: ['Resumen de {$jslabel q_reporte_oaps_000_Report RUBRO } ', 
+						{$RUBRO_grval},
+						' - ', 
+						{$groupRUBRO_total_cnt}, 
+						' Registros totales'],
+					style: 'group_3',
+				}
+					],
+				
+		
+		
+		
+		
+		
+		{END RUBRO_endgroup}
+							{BEGIN UEJ_endgroup}
+
+				[
+							
+				{
+					colSpan:5,
+					text: ['Resumen de {$jslabel q_reporte_oaps_000_Report UEJ } ', 
+						{$UEJ_grval},
+						' - ', 
+						{$groupUEJ_total_cnt}, 
+						' Registros totales'],
+					style: 'group_2',
+				}
+					],
+				
+		
+		
+		
+		
+		
+		{END UEJ_endgroup}
+							{BEGIN VIGENCIA_endgroup}
+
+				[
+							
+				{
+					colSpan:5,
+					text: ['Resumen de {$jslabel q_reporte_oaps_000_Report VIGENCIA } ', 
+						{$VIGENCIA_grval},
+						' - ', 
+						{$groupVIGENCIA_total_cnt}, 
+						' Registros totales'],
+					style: 'group_1',
+				}
+					],
+				
+		
+		
+		
+		
+		
+		{END VIGENCIA_endgroup}
+			
+{END grid_row}
+
+		[
+																																													{
+				text: '{$jslabel q_reporte_oaps_000_Report PRODUCTO }',
+				alignment: '{$PRODUCTO_align}',
+				style: 'blackshade'
+			},
+														{
+				text: '{$jslabel q_reporte_oaps_000_Report REC }',
+				alignment: '{$REC_align}',
+				style: 'blackshade'
+			},
+														{
+				text: '{$jslabel q_reporte_oaps_000_Report BPIN }',
+				alignment: '{$BPIN_align}',
+				style: 'blackshade'
+			},
+														{
+				text: '{$jslabel q_reporte_oaps_000_Report DESCPRODUCTO }',
+				alignment: '{$DESCPRODUCTO_align}',
+				style: 'blackshade'
+			},
+														{
+				text: '{$jslabel q_reporte_oaps_000_Report PROD_PRESUPUESTO }',
+				alignment: '{$PROD_PRESUPUESTO_align}',
+				style: 'blackshade'
+			},
+									],
+
+
+
+	
+		
+
+
+
+	[
+		{	
+			text: 'Resumen de la pagina {$page_total_cnt} - Registros totales',
+			colSpan: 5,
+			style: 'pagesummary',
+		}
+	],
+
+	
+	
+	
+	
+
+
+{BEGIN global_summary}
+	[
+		{
+			text: 'Resumen global {$global_total_cnt} - Registros totales',
+			colSpan: 5,
+			style: 'globalsummary',
+		}
+	],
+
+	
+	
+	
+	
+{END global_summary}
+									]
+			
+			}
+		},
+		{END body}
+	],
+	footer: [
+								
+{
+	table: {
+	
+				
+		location: 'below-grid',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+			
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+											],
+		
+		]
+	}
+}
+			],
+	};
+
+
+pdfFonts = {$pdfFonts};

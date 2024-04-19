@@ -1,0 +1,2 @@
+
+Runner.pages.PageSettings.addPageEvent('003_actividad',Runner.pages.constants.PAGE_ADD,"afterPageReady",function(pageObj,proxy,pageid,inlineRow,inlineObject,row){var ctrl=Runner.getControl(pageid,'SALDO');ctrl.makeReadonly();});Runner.pages.PageSettings.addPageEvent('003_actividad',Runner.pages.constants.PAGE_EDIT,"afterPageReady",function(pageObj,proxy,pageid,inlineRow,inlineObject,row){var ctrl=Runner.getControl(pageid,'SALDO');ctrl.makeReadonly();});

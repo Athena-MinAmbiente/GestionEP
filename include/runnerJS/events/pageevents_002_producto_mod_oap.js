@@ -1,0 +1,2 @@
+
+Runner.pages.PageSettings.addPageEvent('002_producto_mod_oap',Runner.pages.constants.PAGE_EDIT,"afterPageReady",function(pageObj,proxy,pageid,inlineRow,inlineObject,row){var ctrl=Runner.getControl(pageid,'tipo_mod');ctrl.makeReadonly();});

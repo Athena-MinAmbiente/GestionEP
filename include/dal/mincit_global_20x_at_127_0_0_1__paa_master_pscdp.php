@@ -1,0 +1,45 @@
+<?php
+$dalTablepaa_master_pscdp = array();
+$dalTablepaa_master_pscdp["PAAU_ID"] = array("type"=>3,"varname"=>"PAAU_ID", "name" => "PAAU_ID", "autoInc" => "1");
+$dalTablepaa_master_pscdp["PAA_ID_FK"] = array("type"=>3,"varname"=>"PAA_ID_FK", "name" => "PAA_ID_FK", "autoInc" => "0");
+$dalTablepaa_master_pscdp["TIPO_CDP"] = array("type"=>3,"varname"=>"TIPO_CDP", "name" => "TIPO_CDP", "autoInc" => "0");
+$dalTablepaa_master_pscdp["MES_CDP"] = array("type"=>3,"varname"=>"MES_CDP", "name" => "MES_CDP", "autoInc" => "0");
+$dalTablepaa_master_pscdp["DESC_CDP"] = array("type"=>201,"varname"=>"DESC_CDP", "name" => "DESC_CDP", "autoInc" => "0");
+$dalTablepaa_master_pscdp["SYS_STATUS"] = array("type"=>3,"varname"=>"SYS_STATUS", "name" => "SYS_STATUS", "autoInc" => "0");
+$dalTablepaa_master_pscdp["UNIDAD_CONTRATACION"] = array("type"=>200,"varname"=>"UNIDAD_CONTRATACION", "name" => "UNIDAD_CONTRATACION", "autoInc" => "0");
+$dalTablepaa_master_pscdp["DESC_PAA"] = array("type"=>201,"varname"=>"DESC_PAA", "name" => "DESC_PAA", "autoInc" => "0");
+$dalTablepaa_master_pscdp["VIGENCIA"] = array("type"=>2,"varname"=>"VIGENCIA", "name" => "VIGENCIA", "autoInc" => "0");
+$dalTablepaa_master_pscdp["UEJ"] = array("type"=>200,"varname"=>"UEJ", "name" => "UEJ", "autoInc" => "0");
+$dalTablepaa_master_pscdp["RUBRO"] = array("type"=>200,"varname"=>"RUBRO", "name" => "RUBRO", "autoInc" => "0");
+$dalTablepaa_master_pscdp["PRODUCTO"] = array("type"=>200,"varname"=>"PRODUCTO", "name" => "PRODUCTO", "autoInc" => "0");
+$dalTablepaa_master_pscdp["ACTIVIDAD"] = array("type"=>200,"varname"=>"ACTIVIDAD", "name" => "ACTIVIDAD", "autoInc" => "0");
+$dalTablepaa_master_pscdp["ACT_ID"] = array("type"=>3,"varname"=>"ACT_ID", "name" => "ACT_ID", "autoInc" => "0");
+$dalTablepaa_master_pscdp["PROD_ID"] = array("type"=>3,"varname"=>"PROD_ID", "name" => "PROD_ID", "autoInc" => "0");
+$dalTablepaa_master_pscdp["SOL_FECHA"] = array("type"=>135,"varname"=>"SOL_FECHA", "name" => "SOL_FECHA", "autoInc" => "0");
+$dalTablepaa_master_pscdp["SOL_DEPENDENCIA"] = array("type"=>3,"varname"=>"SOL_DEPENDENCIA", "name" => "SOL_DEPENDENCIA", "autoInc" => "0");
+$dalTablepaa_master_pscdp["OPERACION_ID_FK"] = array("type"=>3,"varname"=>"OPERACION_ID_FK", "name" => "OPERACION_ID_FK", "autoInc" => "0");
+$dalTablepaa_master_pscdp["USER_REG"] = array("type"=>200,"varname"=>"USER_REG", "name" => "USER_REG", "autoInc" => "0");
+$dalTablepaa_master_pscdp["VALOR_SOLICITADO"] = array("type"=>5,"varname"=>"VALOR_SOLICITADO", "name" => "VALOR_SOLICITADO", "autoInc" => "0");
+$dalTablepaa_master_pscdp["NUMERO_SCDP_SIIF"] = array("type"=>200,"varname"=>"NUMERO_SCDP_SIIF", "name" => "NUMERO_SCDP_SIIF", "autoInc" => "0");
+$dalTablepaa_master_pscdp["DOCUMENTO_SCDP_SIIF"] = array("type"=>201,"varname"=>"DOCUMENTO_SCDP_SIIF", "name" => "DOCUMENTO_SCDP_SIIF", "autoInc" => "0");
+$dalTablepaa_master_pscdp["FECHA_SCDP_SIIF"] = array("type"=>135,"varname"=>"FECHA_SCDP_SIIF", "name" => "FECHA_SCDP_SIIF", "autoInc" => "0");
+$dalTablepaa_master_pscdp["USUARIO_SCDP_SIIF"] = array("type"=>200,"varname"=>"USUARIO_SCDP_SIIF", "name" => "USUARIO_SCDP_SIIF", "autoInc" => "0");
+$dalTablepaa_master_pscdp["TIPO_SOL"] = array("type"=>16,"varname"=>"TIPO_SOL", "name" => "TIPO_SOL", "autoInc" => "0");
+$dalTablepaa_master_pscdp["DEV_FECHA"] = array("type"=>135,"varname"=>"DEV_FECHA", "name" => "DEV_FECHA", "autoInc" => "0");
+$dalTablepaa_master_pscdp["DEV_USER"] = array("type"=>200,"varname"=>"DEV_USER", "name" => "DEV_USER", "autoInc" => "0");
+$dalTablepaa_master_pscdp["DEV_MSG"] = array("type"=>200,"varname"=>"DEV_MSG", "name" => "DEV_MSG", "autoInc" => "0");
+$dalTablepaa_master_pscdp["DEV_MAIL"] = array("type"=>200,"varname"=>"DEV_MAIL", "name" => "DEV_MAIL", "autoInc" => "0");
+$dalTablepaa_master_pscdp["FECHA_REG"] = array("type"=>135,"varname"=>"FECHA_REG", "name" => "FECHA_REG", "autoInc" => "0");
+$dalTablepaa_master_pscdp["NUMERO_CDP_SIIF"] = array("type"=>200,"varname"=>"NUMERO_CDP_SIIF", "name" => "NUMERO_CDP_SIIF", "autoInc" => "0");
+$dalTablepaa_master_pscdp["DOCUMENTO_CDP_SIIF"] = array("type"=>201,"varname"=>"DOCUMENTO_CDP_SIIF", "name" => "DOCUMENTO_CDP_SIIF", "autoInc" => "0");
+$dalTablepaa_master_pscdp["FECHA_CDP_SIIF"] = array("type"=>135,"varname"=>"FECHA_CDP_SIIF", "name" => "FECHA_CDP_SIIF", "autoInc" => "0");
+$dalTablepaa_master_pscdp["USUARIO_CDP_SIIF"] = array("type"=>200,"varname"=>"USUARIO_CDP_SIIF", "name" => "USUARIO_CDP_SIIF", "autoInc" => "0");
+$dalTablepaa_master_pscdp["NOT_MAIL"] = array("type"=>200,"varname"=>"NOT_MAIL", "name" => "NOT_MAIL", "autoInc" => "0");
+$dalTablepaa_master_pscdp["OBS"] = array("type"=>200,"varname"=>"OBS", "name" => "OBS", "autoInc" => "0");
+$dalTablepaa_master_pscdp["sys_transac"] = array("type"=>135,"varname"=>"sys_transac", "name" => "sys_transac", "autoInc" => "0");
+$dalTablepaa_master_pscdp["ATTACH_A"] = array("type"=>201,"varname"=>"ATTACH_A", "name" => "ATTACH_A", "autoInc" => "0");
+$dalTablepaa_master_pscdp["sys_user"] = array("type"=>200,"varname"=>"sys_user", "name" => "sys_user", "autoInc" => "0");
+$dalTablepaa_master_pscdp["PAAU_ID"]["key"]=true;
+
+$dal_info["mincit_global_20x_at_127_0_0_1__paa_master_pscdp"] = &$dalTablepaa_master_pscdp;
+?>

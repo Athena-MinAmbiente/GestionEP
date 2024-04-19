@@ -1,0 +1,913 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-view"   
+		>
+	{BEGIN body}
+		<style>
+		{$containerCss}
+		</style>
+		<div class="r-vbar-page">
+			<div data-width="300px" data-fixed class="r-left clearfix {$leftbar_class}" >
+								<div data-location="left" id="form_left_{$pageid}" data-makeup="leftbar" {$form_left} data-pageid="{$pageid}">
+{BEGIN left_block}
+ 
+     
+         
+
+			<div data-cellId="left_c0" data-pageid="{$pageid}" data-logo-cell class="clearfix " data-itemid="logo" {$item_logo}>
+				{BEGIN logo_block}
+	<A data-itemtype="logo" data-itemid="logo" {$item_logo} data-pageid="{$pageid}" class="navbar-brand" href="{$home_link}" data-pageid="{$pageid}" {$logo_hiddenattr}>
+		{$logo}
+	</A>
+{END logo_block}
+				<button data-pageid="1" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target="[data-mobile-controlled]">	
+					<span class="sr-only">Toggle navigation</span>	
+					<span class="icon-bar"></span>					
+				</button>				
+			</div>
+		
+ 
+
+			<div class="clearfix " data-cellId="left_c0" data-pageid="{$pageid}" data-logo-cell data-itemid="expand_button" {$item_expand_button} data-topcell-item-type="expand_button" >
+				<span data-itemtype="expand_button" data-itemid="expand_button" {$item_expand_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Expandir" class="btn btn-link   
+	" href="#" >
+					<span class="glyphicon glyphicon-triangle-right"></span>
+										</a>
+</span>
+			</div>
+		
+     
+     
+         
+
+			<div data-cellId="left_c1" data-pageid="{$pageid}" class="clearfix  r-ori-vert " data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}">
+				{BEGIN menuitems_main}
+<ul data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}"	class="r-menu nav menu-treelike" 
+	data-menulevel="1"
+>
+
+{BEGIN item_children1}
+<li class="
+	{$item_current}">
+<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline data-menu-top >
+	{$item_separator}
+	<span class="r-menu-link r-menu-expanded "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren2}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren2}
+	</span>
+		<span class="r-menu-collapsed">{$item_collicon}{$item_firstcap}</span>
+	</a>
+{BEGIN item_showchildren2}
+<ul class="
+			nav collapse 
+			{$submenu_class}" 
+		id="submenu{$item_id}" data-menulevel="2">
+	{BEGIN item_children2}
+		{BEGIN item_menulink2}
+		<li class="
+						{$item_current}"
+		>
+			<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline >
+	{$item_separator}
+	<span class="r-menu-link  "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren2}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren2}
+	</span>
+	</a>
+			{BEGIN item_showchildren3}
+<ul class="
+			nav collapse 
+			{$submenu_class}" 
+		id="submenu{$item_id}" data-menulevel="3">
+	{BEGIN item_children3}
+		{BEGIN item_menulink3}
+		<li class="
+						{$item_current}"
+		>
+			<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline >
+	{$item_separator}
+	<span class="r-menu-link  "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren3}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren3}
+	</span>
+	</a>
+			{BEGIN item_showchildren4}
+<ul class="
+			nav collapse 
+			{$submenu_class}" 
+		id="submenu{$item_id}" data-menulevel="4">
+	{BEGIN item_children4}
+		{BEGIN item_menulink4}
+		<li class="
+						{$item_current}"
+		>
+			<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline >
+	{$item_separator}
+	<span class="r-menu-link  "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren4}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren4}
+	</span>
+	</a>
+			{BEGIN item_showchildren5}
+<ul class="
+			nav collapse 
+			{$submenu_class}" 
+		id="submenu{$item_id}" data-menulevel="5">
+	{BEGIN item_children5}
+		{BEGIN item_menulink5}
+		<li class="
+						{$item_current}"
+		>
+			<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline >
+	{$item_separator}
+	<span class="r-menu-link  "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren5}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren5}
+	</span>
+	</a>
+					</li>
+		{END item_menulink5}
+	{END item_children5}
+</ul>
+{END item_showchildren5}
+		</li>
+		{END item_menulink4}
+	{END item_children4}
+</ul>
+{END item_showchildren4}
+		</li>
+		{END item_menulink3}
+	{END item_children3}
+</ul>
+{END item_showchildren3}
+		</li>
+		{END item_menulink2}
+	{END item_children2}
+</ul>
+{END item_showchildren2}
+</li>
+{END item_children1}
+</ul>
+{END menuitems_main}
+			</div>
+		
+    {END left_block}
+</div>				</div>
+			<div class="r-content-col" data-resize-left="leftbar">
+				<div data-resize-left="leftbar"  data-fixed class="r-topheader" data-resize-name="topbar">
+									{BEGIN supertop_block}
+<nav class="navbar navbar-default" 
+	data-location="supertop" id="form_supertop_{$pageid}" data-makeup="leftbar" {$form_supertop} data-pageid="{$pageid}" >
+			 
+							 
+				<span class="navbar-form  navbar-header" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="expand_menu_button" {$item_expand_menu_button} data-topcell-item-type="expand_menu_button" >
+				<span data-itemtype="expand_menu_button" data-itemid="expand_menu_button" {$item_expand_menu_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Muestrame el menu" class="btn-link   
+	 glyphicon glyphicon-menu-hamburger" href="#" >		
+				
+								</a>
+</span>
+			</span>
+		 
+				<span class="navbar-form  navbar-collapse" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="collapse_button" {$item_collapse_button} data-topcell-item-type="collapse_button" >
+				<span data-itemtype="collapse_button" data-itemid="collapse_button" {$item_collapse_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Encubrir" class="btn-link   
+	 glyphicon glyphicon-triangle-left" href="#" >		
+				
+								</a>
+</span>
+			</span>
+							 
+							 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="loginform_login" {$item_loginform_login} data-topcell-item-type="loginform_login" >
+				{BEGIN guestloginbutton}
+<span data-itemtype="loginform_login" data-itemid="loginform_login" {$item_loginform_login} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" href="#" {$guestloginlink_attrs} >
+							Conectar			</a>
+</span>
+{END guestloginbutton}
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="username_button" {$item_username_button} data-topcell-item-type="username_button" >
+				{BEGIN loggedas_message}
+<span data-itemtype="username_button" data-itemid="username_button" {$item_username_button} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+			{BEGIN userbutton_icon}							<span class="glyphicon glyphicon-user"></span>
+						{END userbutton_icon}{$userbutton_image}			{$username}			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN userinfo_link}
+	<li data-itemtype="userinfo_link" data-itemid="userinfo_link" {$item_userinfo_link} data-pageid="{$pageid}" data-small >
+				<a  href="userinfo.php"  title="" >
+				
+		Perfil del usuario		
+		</a>
+	</li>
+{END userinfo_link}
+							{BEGIN logoutbutton}
+	<li data-itemtype="logout_link" data-itemid="logout_link" {$item_logout_link} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$logoutlink_attrs}  title="" >
+				
+		Desconectarse		
+		</a>
+	</li>
+{END logoutbutton}
+							{BEGIN adminarea_link}
+	<li data-itemtype="adminarea_link" data-itemid="adminarea_link" {$item_adminarea_link} data-pageid="{$pageid}" data-small >
+				<a  href="admin_rights_list.php"  title="" >
+				
+		Area Admin		
+		</a>
+	</li>
+{END adminarea_link}
+					</ul>
+	</span>
+</span>
+{END loggedas_message}
+			</span>
+								</nav>
+{END supertop_block}
+						{$locking}
+				</div>
+				<div class="r-body" data-resize-top="topbar" data-body-width="standard">
+					{$header}
+					<div class="r-top">
+									{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="leftbar" {$form_top} data-pageid="{$pageid}" >		
+	 
+				<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+		 
+		<h2 data-itemtype="view_header" data-itemid="view_header" {$item_view_header} data-pageid="{$pageid}" >{$pagetitlelabel 007_cdp view}</h2>
+		</div>					</div>
+			</div>		
+{END top_block}
+						</div>
+											<div class="r-above">
+					{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="leftbar" {$form_above-grid} data-pageid="{$pageid}" >		
+	 
+				<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+		{BEGIN firstAboveGridCell}
+				{END firstAboveGridCell}	
+	</div>					</div>
+			</div>		
+{END above-grid_block}
+	</div>
+<div class="r-grid">
+	{BEGIN grid_tabs}
+  <ul class="nav nav-tabs bsgrid_tabs">
+	{$grid_tabs_content}
+  </ul>
+{END grid_tabs}
+					{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="left"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="leftbar" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN cdp_id_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cdp_id}  r-vertical-field" data-fieldname="cdp_id" data-signal-error-for="cdp_id{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="cdp_id" data-fieldname="cdp_id" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_cdp_id}">
+		
+		{BEGIN cdp_id_label}{$label 007_cdp cdp_id }{END cdp_id_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$cdp_id_value}	</div>
+
+		
+</div>
+
+
+{END cdp_id_fieldblock}
+											
+{BEGIN FA_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_FA}  r-vertical-field" data-fieldname="FA" data-signal-error-for="FA{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="FA" data-fieldname="FA" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_FA}">
+		
+		{BEGIN FA_label}{$label 007_cdp FA }{END FA_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$FA_value}	</div>
+
+		
+</div>
+
+
+{END FA_fieldblock}
+											
+{BEGIN Numero_Documento_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Numero_Documento}  r-vertical-field" data-fieldname="Numero Documento" data-signal-error-for="Numero_Documento{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="Numero_Documento" data-fieldname="Numero Documento" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_Numero_Documento}">
+		
+		{BEGIN Numero_Documento_label}{$label 007_cdp Numero_Documento }{END Numero_Documento_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Numero_Documento_value}	</div>
+
+		
+</div>
+
+
+{END Numero_Documento_fieldblock}
+											
+{BEGIN Fecha_de_Registro_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Fecha_de_Registro}  r-vertical-field" data-fieldname="Fecha de Registro" data-signal-error-for="Fecha_de_Registro{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="Fecha_de_Registro" data-fieldname="Fecha de Registro" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_Fecha_de_Registro}">
+		
+		{BEGIN Fecha_de_Registro_label}{$label 007_cdp Fecha_de_Registro }{END Fecha_de_Registro_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Fecha_de_Registro_value}	</div>
+
+		
+</div>
+
+
+{END Fecha_de_Registro_fieldblock}
+											
+{BEGIN Fecha_de_Creacion_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Fecha_de_Creacion}  r-vertical-field" data-fieldname="Fecha de Creacion" data-signal-error-for="Fecha_de_Creacion{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="Fecha_de_Creacion" data-fieldname="Fecha de Creacion" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_Fecha_de_Creacion}">
+		
+		{BEGIN Fecha_de_Creacion_label}{$label 007_cdp Fecha_de_Creacion }{END Fecha_de_Creacion_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Fecha_de_Creacion_value}	</div>
+
+		
+</div>
+
+
+{END Fecha_de_Creacion_fieldblock}
+											
+{BEGIN Tipo_de_CDP_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Tipo_de_CDP}  r-vertical-field" data-fieldname="Tipo de CDP" data-signal-error-for="Tipo_de_CDP{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="Tipo_de_CDP" data-fieldname="Tipo de CDP" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_Tipo_de_CDP}">
+		
+		{BEGIN Tipo_de_CDP_label}{$label 007_cdp Tipo_de_CDP }{END Tipo_de_CDP_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Tipo_de_CDP_value}	</div>
+
+		
+</div>
+
+
+{END Tipo_de_CDP_fieldblock}
+											
+{BEGIN Estado_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Estado}  r-vertical-field" data-fieldname="Estado" data-signal-error-for="Estado{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="Estado" data-fieldname="Estado" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_Estado}">
+		
+		{BEGIN Estado_label}{$label 007_cdp Estado }{END Estado_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Estado_value}	</div>
+
+		
+</div>
+
+
+{END Estado_fieldblock}
+											
+{BEGIN Dependencia_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Dependencia}  r-vertical-field" data-fieldname="Dependencia" data-signal-error-for="Dependencia{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="Dependencia" data-fieldname="Dependencia" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_Dependencia}">
+		
+		{BEGIN Dependencia_label}{$label 007_cdp Dependencia }{END Dependencia_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Dependencia_value}	</div>
+
+		
+</div>
+
+
+{END Dependencia_fieldblock}
+											
+{BEGIN Dependencia_Descripcion_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Dependencia_Descripcion}  r-vertical-field" data-fieldname="Dependencia Descripcion" data-signal-error-for="Dependencia_Descripcion{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="Dependencia_Descripcion" data-fieldname="Dependencia Descripcion" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_Dependencia_Descripcion}">
+		
+		{BEGIN Dependencia_Descripcion_label}{$label 007_cdp Dependencia_Descripcion }{END Dependencia_Descripcion_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Dependencia_Descripcion_value}	</div>
+
+		
+</div>
+
+
+{END Dependencia_Descripcion_fieldblock}
+											
+{BEGIN Rubro_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Rubro}  r-vertical-field" data-fieldname="Rubro" data-signal-error-for="Rubro{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="Rubro" data-fieldname="Rubro" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_Rubro}">
+		
+		{BEGIN Rubro_label}{$label 007_cdp Rubro }{END Rubro_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Rubro_value}	</div>
+
+		
+</div>
+
+
+{END Rubro_fieldblock}
+											
+{BEGIN Descripcion_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Descripcion}  r-vertical-field" data-fieldname="Descripcion" data-signal-error-for="Descripcion{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="Descripcion" data-fieldname="Descripcion" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_Descripcion}">
+		
+		{BEGIN Descripcion_label}{$label 007_cdp Descripcion }{END Descripcion_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Descripcion_value}	</div>
+
+		
+</div>
+
+
+{END Descripcion_fieldblock}
+											
+{BEGIN Fuente_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Fuente}  r-vertical-field" data-fieldname="Fuente" data-signal-error-for="Fuente{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="Fuente" data-fieldname="Fuente" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_Fuente}">
+		
+		{BEGIN Fuente_label}{$label 007_cdp Fuente }{END Fuente_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Fuente_value}	</div>
+
+		
+</div>
+
+
+{END Fuente_fieldblock}
+											
+{BEGIN Recurso_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Recurso}  r-vertical-field" data-fieldname="Recurso" data-signal-error-for="Recurso{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="Recurso" data-fieldname="Recurso" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_Recurso}">
+		
+		{BEGIN Recurso_label}{$label 007_cdp Recurso }{END Recurso_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Recurso_value}	</div>
+
+		
+</div>
+
+
+{END Recurso_fieldblock}
+											
+{BEGIN Sit_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Sit}  r-vertical-field" data-fieldname="Sit" data-signal-error-for="Sit{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="Sit" data-fieldname="Sit" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_Sit}">
+		
+		{BEGIN Sit_label}{$label 007_cdp Sit }{END Sit_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Sit_value}	</div>
+
+		
+</div>
+
+
+{END Sit_fieldblock}
+											
+{BEGIN Valor_Inicial_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Valor_Inicial}  r-vertical-field" data-fieldname="Valor Inicial" data-signal-error-for="Valor_Inicial{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}" data-field="Valor_Inicial" data-fieldname="Valor Inicial" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_Valor_Inicial}">
+		
+		{BEGIN Valor_Inicial_label}{$label 007_cdp Valor_Inicial }{END Valor_Inicial_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Valor_Inicial_value}	</div>
+
+		
+</div>
+
+
+{END Valor_Inicial_fieldblock}
+											
+{BEGIN Valor_Operaciones_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Valor_Operaciones}  r-vertical-field" data-fieldname="Valor Operaciones" data-signal-error-for="Valor_Operaciones{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field15" {$item_integrated_edit_field15} data-pageid="{$pageid}" data-field="Valor_Operaciones" data-fieldname="Valor Operaciones" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_Valor_Operaciones}">
+		
+		{BEGIN Valor_Operaciones_label}{$label 007_cdp Valor_Operaciones }{END Valor_Operaciones_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Valor_Operaciones_value}	</div>
+
+		
+</div>
+
+
+{END Valor_Operaciones_fieldblock}
+											
+{BEGIN Valor_Actual_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Valor_Actual}  r-vertical-field" data-fieldname="Valor Actual" data-signal-error-for="Valor_Actual{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field16" {$item_integrated_edit_field16} data-pageid="{$pageid}" data-field="Valor_Actual" data-fieldname="Valor Actual" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_Valor_Actual}">
+		
+		{BEGIN Valor_Actual_label}{$label 007_cdp Valor_Actual }{END Valor_Actual_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Valor_Actual_value}	</div>
+
+		
+</div>
+
+
+{END Valor_Actual_fieldblock}
+											
+{BEGIN Saldo_por_Comprometer_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Saldo_por_Comprometer}  r-vertical-field" data-fieldname="Saldo por Comprometer" data-signal-error-for="Saldo_por_Comprometer{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field17" {$item_integrated_edit_field17} data-pageid="{$pageid}" data-field="Saldo_por_Comprometer" data-fieldname="Saldo por Comprometer" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_Saldo_por_Comprometer}">
+		
+		{BEGIN Saldo_por_Comprometer_label}{$label 007_cdp Saldo_por_Comprometer }{END Saldo_por_Comprometer_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Saldo_por_Comprometer_value}	</div>
+
+		
+</div>
+
+
+{END Saldo_por_Comprometer_fieldblock}
+											
+{BEGIN Objeto_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Objeto}  r-vertical-field" data-fieldname="Objeto" data-signal-error-for="Objeto{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field18" {$item_integrated_edit_field18} data-pageid="{$pageid}" data-field="Objeto" data-fieldname="Objeto" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_Objeto}">
+		
+		{BEGIN Objeto_label}{$label 007_cdp Objeto }{END Objeto_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Objeto_value}	</div>
+
+		
+</div>
+
+
+{END Objeto_fieldblock}
+											
+{BEGIN Solicitud_CDP_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Solicitud_CDP}  r-vertical-field" data-fieldname="Solicitud CDP" data-signal-error-for="Solicitud_CDP{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field19" {$item_integrated_edit_field19} data-pageid="{$pageid}" data-field="Solicitud_CDP" data-fieldname="Solicitud CDP" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_Solicitud_CDP}">
+		
+		{BEGIN Solicitud_CDP_label}{$label 007_cdp Solicitud_CDP }{END Solicitud_CDP_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Solicitud_CDP_value}	</div>
+
+		
+</div>
+
+
+{END Solicitud_CDP_fieldblock}
+											
+{BEGIN Compromisos_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Compromisos}  r-vertical-field" data-fieldname="Compromisos" data-signal-error-for="Compromisos{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field20" {$item_integrated_edit_field20} data-pageid="{$pageid}" data-field="Compromisos" data-fieldname="Compromisos" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_Compromisos}">
+		
+		{BEGIN Compromisos_label}{$label 007_cdp Compromisos }{END Compromisos_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Compromisos_value}	</div>
+
+		
+</div>
+
+
+{END Compromisos_fieldblock}
+											
+{BEGIN Cuentas_por_Pagar_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Cuentas_por_Pagar}  r-vertical-field" data-fieldname="Cuentas por Pagar" data-signal-error-for="Cuentas_por_Pagar{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field21" {$item_integrated_edit_field21} data-pageid="{$pageid}" data-field="Cuentas_por_Pagar" data-fieldname="Cuentas por Pagar" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_Cuentas_por_Pagar}">
+		
+		{BEGIN Cuentas_por_Pagar_label}{$label 007_cdp Cuentas_por_Pagar }{END Cuentas_por_Pagar_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Cuentas_por_Pagar_value}	</div>
+
+		
+</div>
+
+
+{END Cuentas_por_Pagar_fieldblock}
+											
+{BEGIN Obligaciones_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Obligaciones}  r-vertical-field" data-fieldname="Obligaciones" data-signal-error-for="Obligaciones{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field22" {$item_integrated_edit_field22} data-pageid="{$pageid}" data-field="Obligaciones" data-fieldname="Obligaciones" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_Obligaciones}">
+		
+		{BEGIN Obligaciones_label}{$label 007_cdp Obligaciones }{END Obligaciones_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Obligaciones_value}	</div>
+
+		
+</div>
+
+
+{END Obligaciones_fieldblock}
+											
+{BEGIN Ordenes_de_Pago_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Ordenes_de_Pago}  r-vertical-field" data-fieldname="Ordenes de Pago" data-signal-error-for="Ordenes_de_Pago{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field23" {$item_integrated_edit_field23} data-pageid="{$pageid}" data-field="Ordenes_de_Pago" data-fieldname="Ordenes de Pago" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_Ordenes_de_Pago}">
+		
+		{BEGIN Ordenes_de_Pago_label}{$label 007_cdp Ordenes_de_Pago }{END Ordenes_de_Pago_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Ordenes_de_Pago_value}	</div>
+
+		
+</div>
+
+
+{END Ordenes_de_Pago_fieldblock}
+											
+{BEGIN Reintegros_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Reintegros}  r-vertical-field" data-fieldname="Reintegros" data-signal-error-for="Reintegros{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field24" {$item_integrated_edit_field24} data-pageid="{$pageid}" data-field="Reintegros" data-fieldname="Reintegros" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_Reintegros}">
+		
+		{BEGIN Reintegros_label}{$label 007_cdp Reintegros }{END Reintegros_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Reintegros_value}	</div>
+
+		
+</div>
+
+
+{END Reintegros_fieldblock}
+											
+{BEGIN FECHA_ACTUALIZACION_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_FECHA_ACTUALIZACION}  r-vertical-field" data-fieldname="FECHA_ACTUALIZACION" data-signal-error-for="FECHA_ACTUALIZACION{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field25" {$item_integrated_edit_field25} data-pageid="{$pageid}" data-field="FECHA_ACTUALIZACION" data-fieldname="FECHA_ACTUALIZACION" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_FECHA_ACTUALIZACION}">
+		
+		{BEGIN FECHA_ACTUALIZACION_label}{$label 007_cdp FECHA_ACTUALIZACION }{END FECHA_ACTUALIZACION_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$FECHA_ACTUALIZACION_value}	</div>
+
+		
+</div>
+
+
+{END FECHA_ACTUALIZACION_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+	</div>
+<div class="r-below">
+					{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="leftbar" {$form_below-grid} data-pageid="{$pageid}" >		
+	 
+				<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	
+">
+		 
+		{BEGIN back_button}
+<span data-itemtype="view_back_list" data-itemid="view_back_list" {$item_view_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="view_close" data-itemid="view_close" {$item_view_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" href="#" {$closebutton_attrs} >
+							Cerrar ventana			</a>
+</span>
+{END close_button}
+		</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	
+">
+		 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+</span>
+		</div>					</div>
+			</div>		
+{END below-grid_block}
+	</div>
+
+
+
+
+										{$footer}
+				</div>
+			</div>
+			<div class="r-body-shadow">
+			</div>
+		</div>
+	{END body}
+	</body>
+</html>
